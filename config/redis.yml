@@ -1,0 +1,16 @@
+
+default: &default
+  port: 6379 
+  thread_safe: true
+
+production:
+  <<: *default
+  host: 'localhost'
+
+development:
+  <<: *default
+  host: 'localhost'
+
+test:
+  <<: *default
+  host: 'localhost'

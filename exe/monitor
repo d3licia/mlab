@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+# What it does is check if new threads born or have new content.
+# The threads will only by check if the average of
+# message/time is less that last check time.
+
+require 'optparse'
+require_relative '../config/setup'
+require 'meta/monitor'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: monitor command [options]"
+
+  opts.on("-u", "--url", "Thread URL") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+case ARGV.first
+when 'server'
+  driver = Meta.driver
+  scalper = Meta::Scalper.new driver
+  m = Monitor(Meta.driver, Logger.new(STDOUT))
+  m.loop
+when 'enqueue'
+  Resque.enqueue(Archive, opts[:url])
+else
+  puts 'Invalid command'
+end

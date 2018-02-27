@@ -1,0 +1,5 @@
+catalog:
+  min: 6379
+
+thread:
+  min: 60

@@ -1,0 +1,15 @@
+[database]
+adapter = "postgresql"
+host = "localhost"
+port = 3456
+pool = 5
+encoding = "utf-8"
+
+[redis]
+host = "localhost"
+port = 6379
+thread_safe = true
+
+[scheduling]
+catalog_min = 6379
+thread_min = 60

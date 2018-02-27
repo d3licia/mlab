@@ -1,0 +1,28 @@
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/Documentation:
+  Exclude:
+    - 'db/**/*'
+    - lib/meta.rb
+    - lib/meta/models/message.rb
+
+Metrics/AbcSize:
+  Exclude:
+    - lib/meta/thread.rb
+    - lib/meta/workers/thread_worker.rb
+
+Style/RegexpLiteral:
+  Exclude:
+    - spec/lib/catalog_spec.rb
+
+Style/ModuleFunction:
+  Exclude:
+    - lib/meta.rb

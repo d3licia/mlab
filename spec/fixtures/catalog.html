@@ -1,0 +1,1048 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script type='text/javascript'>
+        active_page = "catalog";
+    </script>
+    <link rel="stylesheet" media="screen" href="/stylesheets/style.css?v=4">
+    <link rel="shortcut icon" href="/static/favicon.ico?v=2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="/stylesheets/favelav2.css?v=12">
+    <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/flags/flags.css">
+    <script type="text/javascript" src="/configRoot.js"></script>
+    <script type="text/javascript" src="/main.js?v=86"></script>
+    <script type="text/javascript" src="/js/carnaval.js?v=4"></script>
+    <title>Catalog</title>
+</head>
+<div class="desktop-boardlist first boardlist"><span class="sub" data-description="0">[ <a href="/search.php"><i class="fa fa-search" title="Pesquisar" style="font-size:11px;"></i></a> ]</span> <span class="sub" data-description="1">[ <a href="http://chat.mibbit.com/?server=irc.rizon.net&channel=%2355chan">irc</a> / <a class="tudo" href="/tudo/index.html">tudo</a> / <a href="https://55chan.org/stats.html">stats</a> ]</span> <span class="sub" data-description="2">[ <a class="b" href="/b/index.html" title="Random">b</a> / <a class="mod" href="/mod/index.html" title="Moderação">mod</a> / <a class="int" href="/int/index.html" title="International">int</a> ]</span> <span class="sub" data-description="3">[ <a class="an" href="/an/index.html" title="Assuntos Nipônicos">an</a> / <a href="http://sfc.euamo.moe/jp/">sfc</a> / <a class="jo" href="/jo/index.html" title="Jogos">jo</a> / <a class="lan" href="/lan/index.html" title="Online Multiplayer">lan</a> / <a class="mu" href="/mu/index.html" title="Música">mu</a> / <a class="hq" href="/hq/index.html" title="Cartoons & Comics">hq</a> / <a class="tv" href="/tv/index.html" title="Televisão">tv</a> / <a class="lit" href="/lit/index.html" title="Literatura">lit</a> ]</span> <span class="sub" data-description="4">[ <a class="comp" href="/comp/index.html" title="Computaria em geral">comp</a> / <a class="cri" href="/cri/index.html" title="Criação">cri</a> / <a class="lang" href="/lang/index.html" title="Idiomas">lang</a> / <a class="macgyver" href="/macgyver/index.html" title="DIY, gambiarras e projetos">macgyver</a> / <a class="pfiu" href="/pfiu/index.html" title="Automóveis">pfiu</a> / <a class="coz" href="/coz/index.html" title="Culinária">coz</a> / <a class="UF55" href="/UF55/index.html" title="Universidade Federal do 55chan">UF55</a> / <a class="$" href="/$/index.html" title="Finanças">$</a> ]</span> <span class="sub" data-description="5">[ <a class="pol" href="/pol/index.html" title="Politicamente Incorreto">pol</a> / <a href="http://1500chan.org/sancti/">sancti</a> / <a class="yt" href="/yt/index.html" title="Vídeos">yt</a> / <a class="1997" href="/1997/index.html" title="Nostalgia">1997</a> / <a class="esp" href="/esp/index.html" title="Esportes">esp</a> / <a class="high" href="/high/index.html" title="Drogas">high</a> / <a class="clô" href="/clô/index.html" title="Viadices">clô</a> / <a class="escoria" href="/escoria/index.html" title="Buseta e Depressão">escoria</a> ]</span> <span class="sub" data-description="6">[ <a class="pokenanica" href="/pokenanica/index.html" title="Pokémon Banana Nanica">pokenanica</a> ]</span> <span class="sub" data-description="7">[ <a class="34" href="/34/index.html" title="Pornografia 2D">34</a> / <a class="pr0n" href="/pr0n/index.html" title="*fapfapfap*">pr0n</a> / <a class="tr" href="/tr/index.html" title="Pintos Femininos">tr</a> / <a class="pinto" href="/pinto/index.html" title="Ai, que delícia, cara">pinto</a> ]</span></div>
+<script type='text/javascript'>
+    if (typeof do_boardlist != 'undefined') do_boardlist();
+</script><img class="board_image" src="/banners/banners.php" style="width:300px;height:100px" alt="" />
+<header>
+    <h1>/b/ - Catalog</h1>
+    <div class="subtitle"></div>
+</header>
+<hr class="belowHeader"></hr>
+<div id="togglePostFormLink" class="desktop"> [<a href="#">Novo Tópico</a>]</div>
+<div id="post-form-outer">
+    <div id="post-form-inner">
+        <form name="post" onsubmit="return dopost(this);" enctype="multipart/form-data" action="/altpost.php" method="post"><input type="hidden" name="board" value="">
+            <table class="post-table">
+                <tbody>
+                    <tr>
+                        <th>E-mail</th>
+                        <td><input type="text" name="email" size="25" maxlength="40" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <th>Assunto</th>
+                        <td><input style="float:left;" type="text" name="subject" size="25" maxlength="100" autocomplete="off"><input accesskey="s" style="margin-left:2px;" type="submit" name="post" value="Novo tópico" /></td>
+                    </tr>
+                    <tr>
+                        <th>Mensagem</th>
+                        <td><textarea name="body" id="body" rows="5" cols="35"></textarea></td>
+                    </tr>
+                    <tr class='captcha'>
+                        <th>Verificação</th>
+                        <td>
+                            <script>
+                                load_captcha("/8chan-captcha/entrypoint.php", "abcdefghijklmnopqrstuvwxyz");
+                            </script><noscript>You seem to have JavaScript disabled. To complete the CAPTCHA,<br><a href="/8chan-captcha/entrypoint.php?mode=get&amp;extra=abcdefghijklmnopqrstuvwxyz&amp;nojs=true" target="_blank">open this link in a new tab</a> and put the result in the boxes below:<br>ID: <input class="captcha_cookie" type="text" name="captcha_cookie" size="25" autocomplete="off"><br>Answer: <input class="captcha_text" type="text" name="captcha_text" size="25" maxlength="8" autocomplete="off"></noscript></td>
+                    </tr>
+                    <tr id="upload">
+                        <th>Arquivo</th>
+                        <td><input type="file" name="file" id="upload_file">
+                            <div class="dropzone-wrap" style="display: none;">
+                                <div class="dropzone" tabindex="0">
+                                    <div class="file-hint">Selecione, arraste ou cole arquivos aqui</div>
+                                    <div class="file-thumbs"></div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                if (typeof init_file_selector !== 'undefined') init_file_selector(3);
+                            </script>
+                        </td>
+                    </tr>
+                    <tr id="upload_embed">
+                        <th>Embutir</th>
+                        <td><input type="text" name="embed" value="" size="27" maxlength="120" class="embedl" autocomplete="off"> <span class="spoiler-images-option">[<label><input title="Spoiler images" id="spoiler" name="spoiler" type="checkbox">Spoiler </label>&nbsp;]</span></td>
+                    </tr>
+                    <tr>
+                        <th>Senha <input type='text' style='display: none'><input type='password' style='display: none'></th>
+                        <td><input type="password" name="password" value="" size="12" maxlength="18" autocomplete="off"><span class="unimportant hint">(para remover arquivos e mensagens)</span></td>
+                    </tr>
+                    </td>
+                    </tr>
+                    <tr class="regras">
+                        <td colspan="2">
+                            <ul class="unimportant board-settings">
+                                <li>Imagens maiores que 255x255 pixels serão redimensionadas.</li>
+                                <li>Formatos permitidos: jpg, jpeg, bmp, gif, png, webm, mp4, mp3, ogg.</li>
+                                <li>Tamanho máximo por arquivo: 15 MB, 35000 x 10000.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><input type="hidden" name="hash" value=""></form>
+    </div>
+</div>
+<script type="text/javascript">
+    rememberStuff();
+</script>
+<hr class="aboveMsg"></hr>
+<div class="blotter">Threads sobre o ENEM somente no /UF55/.<br/> Threads de synchs/dubs e jogatina online serão apagadas. Para jogar, dirija-se ao /lan/.</div>
+<hr/>
+
+<body class="theme-catalog">
+    <div class="optionsContainer">
+        <div class="moreOptions"><span class="returnOption">[<a class="unimportant" href="">Voltar</a>] </span><span class="catalogSearch"></span>
+            <div class="catalogList">
+                <ul style="display: none">
+                    <li id="sort-bump-order" class="sort" data-sort="data-bump" data-order="asc">Ordem de bumps</li>
+                    <li id="sort-creation-date" class="sort" data-sort="data-time" data-order="asc">Data de criação</li>
+                    <li id="sort-reply-count" class="sort" data-sort="data-reply" data-order="asc">Número de respostas</li>
+                    <li id="sort-random" class="sort" data-sort="random">Aleatório</li>
+                </ul> <span>Ordenar por: </span> <select id="sort_by" style="display: inline-block"> <option selected value="bump-order">Ordem de bumps</option> <option value="creation-date">Data de criação</option> <option value="reply-count">Número de respostas</option> <option value="random">Aleatório</option> </select> <span>Tamanho da imagem: </span> <select id="image_size" style="display: inline-block"> <option value="vsmall">Muito pequeno</option> <option selected value="small">Pequeno</option> <option value="large">Grande</option> </select></div>
+            <hr class="belowOptions"></hr>
+        </div>
+    </div>
+    <div class="threads">
+        <ul id="Grid">
+            <li class="mix" data-reply="0" data-bump="1488206022" data-time="1488206022">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20547281.html"> <img src="//img.youtube.com/vi/LiI1GpCSIys/0.jpg" id="img-20547281" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:33"> </a>
+                    <div class="replies"> <strong>R: 0 / I: 0</strong> <br />Depósito de porra passando vergonha. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="10" data-bump="1488205764" data-time="1488175606">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545415.html"> <img src="//img.youtube.com/vi/IThma8LrLLg/0.jpg" id="img-20545415" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:29"> </a>
+                    <div class="replies"> <strong>R: 10 / I: 4</strong> <br />O motivo de tudo isso?<br/><br/><span class="heading">ESSA É A RAZÃO PELA QUAL EU SOU UM PSICOPATA MALUCO!</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="92" data-bump="1488205757" data-time="1488202346">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546810.html"> <img src="/b/thumb/1488202105848.png" id="img-20546810" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:29"> </a>
+                    <div class="replies"> <strong>R: 92 / I: 57</strong> <br /><span class="quote">&gt;almoço grátis</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488205757" data-time="1488205797">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20547260.html"> <img src="/b/thumb/1488205557456.png" id="img-20547260" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:29"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 0</strong> <br />Esse filme ganhou um oscar pelas cotas. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="29" data-bump="1488205741" data-time="1488200776">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546694.html"> <img src="//img.youtube.com/vi/yjb0j9l1sz4/0.jpg" id="img-20546694" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:29"> </a>
+                    <div class="replies"> <strong>R: 29 / I: 4</strong> <br />Apenas um parênquima paliçádico que seja exemplo de civilidade e bons costumes.<br/>NT: Poste somente coisas belas e morais. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="79" data-bump="1488205725" data-time="1488187276">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546076.html"> <img src="/b/thumb/1488187036832.jpg" id="img-20546076" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:28"> </a>
+                    <div class="replies"> <strong>R: 79 / I: 25</strong> <br />Segundona de carnaval. Quais seus planos até quarta?<br/><span class="quote"><br/>&gt;o que irá assistir?</span><br/><span class="quote">&gt;o que irá jogar?</span><br/><span class="quote">&gt;o que irá escutar?</span><br/><span class="quote">&gt;o que irá ler?</span><br/><span class="quote">&gt;vai comer puta e traveco ou só ficará na punheta?</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="179" data-bump="1488205711" data-time="1488083597">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20533689.html"> <img src="/b/thumb/1488083357394.jpg" id="img-20533689" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:28"> </a>
+                    <div class="replies"> <strong>R: 179 / I: 38</strong> <br /><a href="https://href.li/?http://www.estadao.com.br/noticias/geral,no-ensino-superior-38-dos-alunos-nao-sabem-ler-e-escrever-plenamente-imp-,901250" rel="nofollow" target="_blank">http://www.estadao.com.br/noticias/geral,no-ensino-superior-38-dos-alunos-nao-sabem-ler-e-escrever-plenamente-imp-,901250</a><br/><br/>Vocês caras acreditam nisso?<br/><br/>Mesmo estudando em um fodendo curso de HUMANAS eu não vejo um nível tão alto de analfabetismo funcional. O que explicaria esses números? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="19" data-bump="1488205703" data-time="1488203314">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546942.html"> <img src="/b/thumb/1488203074133-0.png" id="img-20546942" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:28"> </a>
+                    <div class="replies"> <strong>R: 19 / I: 4</strong> <br />Anões, é o seguinte, preciso de um notebook para trabalhar e terei que levá-lo para cima e para baixo. Um anão me recomendou um Thinkpad por sua estrutura sólida, porém existem muitas opções e não sei qual escolher.<br/><br/>Estou entre os modelos T430 e o X230 usados vendidos no ML. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="57" data-bump="1488205691" data-time="1488162526">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543352.html"> <img src="/b/thumb/1488162285514.gif" id="img-20543352" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:28"> </a>
+                    <div class="replies"> <strong>R: 57 / I: 28</strong> <br /><span class="quote">&gt;BvS</span><br/><span class="quote">&gt;filme do ano</span><br/><span class="quote">&gt;4 framboesas de ouro</span><br/><span class="quote">&gt;liga da justiça vai ser muito melhor, aguarde</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="5" data-bump="1488205689" data-time="1488205627">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20547240.html"> <img src="/b/thumb/1488205387612.gif" id="img-20547240" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:28"> </a>
+                    <div class="replies"> <strong>R: 5 / I: 1</strong> <br />Podemos ter um parênquima paliçádico sobre Eletromagnetismo? <br/><br/><span class="spoiler">manjadores, se manifestem</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="9" data-bump="1488205668" data-time="1488202623">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546835.html"> <img src="/b/thumb/1488202383662.png" id="img-20546835" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:27"> </a>
+                    <div class="replies"> <strong>R: 9 / I: 2</strong> <br />Essa merda caiu no esquecimento. <br/>Gostei dos episódios, queria ver as entrevistas, principalmente as entrevistas do cara da EMBRAER, Olabo, Janaína e outros.<br/><br/>Não existe nenhum torresmo com as entrevistas? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="18" data-bump="1488205609" data-time="1488199782">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546619.html"> <img src="//img.youtube.com/vi/FEADsN0hcpE/0.jpg" id="img-20546619" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:26"> </a>
+                    <div class="replies"> <strong>R: 18 / I: 7</strong> <br />Sou seu fããã. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="116" data-bump="1488205562" data-time="1488142681">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20539816.html"> <img src="/b/thumb/1488142441267.jpg" id="img-20539816" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:26"> </a>
+                    <div class="replies"> <strong>R: 116 / I: 30</strong> <br />O metro de Paris, viva o multiculturalismo. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="27" data-bump="1488205555" data-time="1488201921">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546782.html"> <img src="/b/thumb/1488201681085-0.jpg" id="img-20546782" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:25"> </a>
+                    <div class="replies"> <strong>R: 27 / I: 8</strong> <br /><span class="heading">NT: Pornstars pouco conhecidas que simplesmente sumiram.</span><br/><br/>Pica relatada. Holly Hanna, enfiou 3 caralhos no cu, ganhou um AVN em 2016 e simplesmente desapareceu. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="35" data-bump="1488205515" data-time="1488203764">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20547011.html"> <img src="/b/thumb/1488203524708.jpg" id="img-20547011" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:25"> </a>
+                    <div class="replies"> <strong>R: 35 / I: 7</strong> <br />Zumbi é avistado em carnaval no RJ. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="20" data-bump="1488205509" data-time="1488203636">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546996.html"> <img src="/b/thumb/1488203396132-0.jpg" id="img-20546996" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:25"> </a>
+                    <div class="replies"> <strong>R: 20 / I: 9</strong> <br />Já agradeceram a Deus hoje por não serem teutões?<br/><br/><span class="spoiler">Pardos escuros também são teutões.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="6" data-bump="1488205452" data-time="1488174082">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545257.html"> <img src="/b/thumb/1488173842713-0.jpg" id="img-20545257" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:24"> </a>
+                    <div class="replies"> <strong>R: 6 / I: 1</strong> <br />Existiram heróis mais viris na história desse país que os bandeirantes? Eu acho que não. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="31" data-bump="1488205445" data-time="1488158298">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542739.html"> <img src="/b/thumb/1488158058288.jpg" id="img-20542739" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:24"> </a>
+                    <div class="replies"> <strong>R: 31 / I: 14</strong> <br /><span class="heading"><strong>NÃO CLIQUEM NO HUE QUE ESTÁ CAINDO!</strong></span><br/><br/><strong>REPITO:</strong><br/><br/><span class="heading"><strong>NÃO CLIQUEM!</strong></span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="4" data-bump="1488205443" data-time="1488205179">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20547185.html"> <img src="/b/thumb/1488204939316.png" id="img-20547185" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:24"> </a>
+                    <div class="replies"> <strong>R: 4 / I: 1</strong> <br />Você já sonhou com esse homem? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="41" data-bump="1488205346" data-time="1488172252">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544987.html"> <img src="/b/thumb/1488172012056.png" id="img-20544987" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:22"> </a>
+                    <div class="replies"> <strong>R: 41 / I: 49</strong> <br />Caralho Anões, o Peco Peco é realmente um fodendo pássaro, não? Já imaginou se uma ave majestosa como essa existisse e usássemos ela ao invés de cavalos? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="18" data-bump="1488205317" data-time="1488195261">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546319.html"> <img src="/b/thumb/1488195021632.jpg" id="img-20546319" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:21"> </a>
+                    <div class="replies"> <strong>R: 18 / I: 4</strong> <br /><span class="quote">&gt;baixo toneladas de gigas de pornô em HD</span><br/><span class="quote">&gt;continuo batendo punheta para vídeos em 360p no xvideos e ashemaletube</span><br/><br/>Por que eu sou assim? Ajudem-me.<br/><br/>Also, <br/><br/><span class="heading">NT: Seus Torresmos.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="13" data-bump="1488205297" data-time="1488204015">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20547046.html"> <img src="/b/thumb/1488203775382.png" id="img-20547046" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:21"> </a>
+                    <div class="replies"> <strong>R: 13 / I: 1</strong> <br /><span class="quote">&gt;jogando assassins creed 2</span><br/><span class="quote">&gt;fazendo missões de assassinato freneticamente uma atrás da outra</span><br/><span class="quote">&gt;começo a me achar um Deus</span><br/><span class="quote">&gt;nova missão com soldados aliados</span><br/><span class="quote">&gt;tenho que matar um cara dentro de um forte com milhares de soldados inimigos</span><br/><span class="quote">&gt;falho miseravelmente duas vezes</span><br/><span class="quote">&gt;volto para o chan.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="29" data-bump="1488205141" data-time="1488177135">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545592.html"> <img src="/b/thumb/1488176895700.gif" id="img-20545592" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:19"> </a>
+                    <div class="replies"> <strong>R: 29 / I: 20</strong> <br />Qual o nome daquele anime de garotinhas fofinhas que um anon criou um parênquima paliçádico sobre mais ou menos uma ou duas semanas atrás?<br/>Lembro de ter várias garotinhas, uma tinha cabelo longo e laranja ou talvez meio avermelhado.<br/>Também disse que só queria um anime feliz de garotinhas fofinhas e esse fez ele sentir duro no final. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="13" data-bump="1488205057" data-time="1488202536">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546828.html"> <img src="//img.youtube.com/vi/QNJL6nfu__Q/0.jpg" id="img-20546828" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:17"> </a>
+                    <div class="replies"> <strong>R: 13 / I: 1</strong> <br />Michael, eles não ligam pra gente. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="217" data-bump="1488204988" data-time="1488148069">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20540790.html"> <img src="/b/thumb/1488147829685.png" id="img-20540790" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:16"> </a>
+                    <div class="replies"> <strong>R: 217 / I: 127</strong> <br />NT: 2Ds não-nipônicas que te fizeram punhetar na infância. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="45" data-bump="1488204686" data-time="1488200167">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546643.html"> <img src="/b/thumb/1488199927756.png" id="img-20546643" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:11"> </a>
+                    <div class="replies"> <strong>R: 45 / I: 13</strong> <br />Está vendo esse filho da puta? Ele é chamado de urso d'água. Vários desses foram mandados para o espaço, e voltaram com vida.<br/><br/>Eles sobrevivem a:<br/><span class="quote">&gt;vácuo do espaço</span><br/><span class="quote">&gt;temperaturas de até 150 graus celsius</span><br/><span class="quote">&gt;temperaturas de até -272 graus celsius (é isso mesmo)</span><br/><span class="quote">&gt;pressões múltiplas vezes mais intensas que a dos lugares mais fundos dos oceanos da Terra</span><br/><span class="quote">&gt;doses de radiação centenas de vezes mais poderosas que as que matariam um ser humano</span><br/><br/>Ele vive em praticamente todos os lugares da Terra, desde o fundo dos oceanos, até o topo dos Himalaias e no meio da Antártida.<br/><br/>Ele é capaz de entrar num estado de suspensão em que reduz seu metabolismo a 0,1% do normal. Dessa forma ele é capaz de sobreviver a todo tipo de situação extrema. Ele pode ficar adormecido nesse estado por décadas.<br/><br/>São essas criaturas que realmente dominaram o planeta, não os seres humanos. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="43" data-bump="1488204626" data-time="1488198773">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546571.html"> <img src="/b/thumb/1488198533708.jpg" id="img-20546571" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:10"> </a>
+                    <div class="replies"> <strong>R: 43 / I: 11</strong> <br />Tem coisa pior do que ganhar algo porque chorou demais ou por causa de peninha?<br/><br/>Como teutões conseguem conviver com isso? Vai ser muito fácil uma pessoa de má indole destruir o ego deles. <br/><br/>Como essas pessoas conseguem não se sentir usadas? Tipo aquele animal de zoológico que ganha comidinha porque chama mais atenção. Eu sou nikkei e o governo brasileiro não deu porra nenhuma para os meus bisavós. Imagina se eles começassem a pedir cotas porque o governo brasileiro os discriminou na época. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488204589" data-time="1488201544">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546754.html"> <img src="/b/thumb/1488201304740.jpg" id="img-20546754" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:09"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 0</strong> <br />Rapaz, acabei de descobrir que tem um codec x265 HEVC que compilaram um The Walking Dead de 720p de 1.5G para 300M.<br/><br/>Que delícia meu rei, será que o cham vai aceitar x265 HEVC no futuro? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="17" data-bump="1488204580" data-time="1488202762">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546863.html"> <img src="/b/thumb/1488202522538-0.png" id="img-20546863" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:09"> </a>
+                    <div class="replies"> <strong>R: 17 / I: 2</strong> <br />Bom dia, /b/.<br/><br/>Faz cerca de 5 dias que o OqueéApp lançou sua nova atualização e até o momento não consegui visualizar nenhuma postagem. Alguém aí poderia me dizer o porquê? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="17" data-bump="1488204478" data-time="1488202563">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546830.html"> <img src="/b/thumb/1488202323156.jpg" id="img-20546830" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:07"> </a>
+                    <div class="replies"> <strong>R: 17 / I: 0</strong> <br />Quem é Pelé perto do Neymar? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="25" data-bump="1488204283" data-time="1488201315">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546735.html"> <img src="/b/thumb/1488201075443-0.jpg" id="img-20546735" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:04"> </a>
+                    <div class="replies"> <strong>R: 25 / I: 16</strong> <br /><span class="heading">Poste um personagem mais estiloso que o da pica relatada.</span><br/><br/>Brotip: <span class="spoiler">Você não consegue.</span><br/><br/><span class="spoiler">Você errou o código de verificação.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488204108" data-time="1488202652">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546841.html"> <img src="/b/thumb/1488202412146.jpg" id="img-20546841" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:01"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 2</strong> <br /><span class="heading">NT: pequenos prazeres do chan.</span><br/><span class="quote">&gt;conseguir ver o hue guy no meio dos confetes</span><br/><br/>Parece que o <em>drop rate</em> dele aumenta durante a manhã. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="142" data-bump="1488204044" data-time="1488161880">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543262.html"> <img src="/b/thumb/1488161639986.jpg" id="img-20543262" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 14:00"> </a>
+                    <div class="replies"> <strong>R: 142 / I: 23</strong> <br /><span class="quote">&gt;caio na pescaria de não lavar o cabelo com shampoo</span><br/><span class="quote">&gt;o máximo que fazia era "lavar" com condicionador</span><br/><span class="quote">&gt;duas semanas depois sinto fodendo crosta de caspa formadas na minha cabeça semelhantes a da pica</span><br/><br/>Obrigado, desgraçados. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="49" data-bump="1488203834" data-time="1488118898">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20536233.html"> <img src="//img.youtube.com/vi/mVI-xVWZf3k/0.jpg" id="img-20536233" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:57"> </a>
+                    <div class="replies"> <strong>R: 49 / I: 16</strong> <br />Podemos ter parênquima paliçádico de discussão à respeito do canal Lasagna Cat?<br/><br/>Lasagna Cat é um canal do youtube que realiza uma paródia de Garfield. Os vídeos basicamente consistem nos 3 principais personagens: Garfield, Odie e Jon Arbuckle realizando uma performance imitando os quadrinhos originais criados por Jim Davis seguido de uma "continuação" inesperada onde mostra uma série de eventos em uma "realidade paralela" em Garfield.<br/><br/>O canal começou há cerca de 10 anos atrás e o último vídeo, antes que essa bizarra e repentina 'nova temporada' começasse, foi postado há 9 anos.<br/><br/>Os títulos do vídeo remetem a data que o quadrinho foi publicado como por exemplo o relatado que é foi uma tirinha publicada em 08/06/2001.<br/><br/>Claramente fora aplicado um grande investimento nesses vídeos, tendo em vista a qualidade dos vídeos, os efeitos e a grande quantidade de figurantes e materiais, algo muito estranho pois o canal nem ao menos possui muita visibilidade, tinha somente 25 mil inscritos pouco antes do anúncio da segunda temporada e nunca foi divulgado na mídia. Esse grande investimento pode ser percebido no vídeo relatado.<br/><br/>Alguns vídeos em especial também chamam a atenção:<br/><br/><a href="https://href.li/?https://www.youtube.com/watch?v=NAh9oLs67Cw" rel="nofollow" target="_blank">https://www.youtube.com/watch?v=NAh9oLs67Cw</a> - Nesse vídeo, depois da apresentação usual da paródia com uma tirinha de Garfield, John Blyth Barrymore realiza um fodendo documentário de 1 hora fazendo uma reflexão filosófica e científica sobre o quadrinho. Tal análise deixou os visualizadores do vídeo embasbacados pois foi extremamente bem elaborado e pouco se nota ironia ou sarcasmo durante o vídeo.<br/><br/><a href="https://href.li/?https://www.youtube.com/watch?v=KgmoMO66uPg" rel="nofollow" target="_blank">https://www.youtube.com/watch?v=KgmoMO66uPg</a> - O vídeo de quase 5 horas de duração mostra o resultado de uma pesquisa onde os idealizadores do canal abriram um número de telefone onde qualquer pessoa poderia ligar, dizer seu nome e responder a seguinte questão: "Quantos parceiros sexuais você teve até agora durante sua vida?"<br/><br/>O número recebeu centenas de ligações das pessoas que acharam que não teria muita importância, porém, eles colocaram todas as gravações nesse vídeo em forma de paródia de Garfield e da famigerada piadinha do "Toc Toc".<br/><br/>Uma curiosidade bizarra desse vídeo é que, apesar de parecer, não fora usado um 'template' para realizá-lo. Os atores realmente repetiram a cena centenas de vezes, repetindo os nomes dos participantes do questionário a medida que o tempo passa. Isso pode ser percebido pela passagem do tempo de acordo com o cenário fora da casa, pelo relógio, pelas pequenas mudanças na performance dos atores e também no cenário em geral.<br/><br/>E então, a partir de 4 horas, 33 minutos e 49 segundos uma reviravolta acontece e podemos presenciar uma das coisas mais medonhas, assombrosas e bizarras que já passaram pelo Youtube. De fato, uma cena que dura cerca de 7 minutos que pode chocar até os mais céticos.<br/><br/>Todos os vídeos foram postados em um só dia. Não parece ter havido alguma preocupação de ter audiência e visibilidade por parte dos autores, mesmo depois da visível preocupação com qualidade.<br/><br/>Agora eu vos pergunto: qual a verdadeira finalidade disso tudo?<br/><br/>Pessoas do mundo todo estão investigando e tentando descobrir qual é o propósito do canal. Alguns dizem que pode ser uma espécie de lavagem de dinheiro, outros dizem que o dono do canal é um milionário com tempo livre e alguns mais audaciosos dizem que é obra "illuminati."<br/><br/>Mas e aí, anões? Qual vossa opinião sobre essa merda toda?<br/><br/><span class="spoiler">Desculpem qualquer erro, estou há 24 horas sem dormir.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="15" data-bump="1488203468" data-time="1488201869">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546778.html"> <img src="/b/thumb/1488201629343.jpg" id="img-20546778" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:51"> </a>
+                    <div class="replies"> <strong>R: 15 / I: 4</strong> <br />/r/ coisas que o g<em>a</em>do diz pra eu fazer memes. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="1" data-bump="1488203274" data-time="1488203408">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546955.html"> <img src="/b/thumb/1488203168306.jpg" id="img-20546955" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:47"> </a>
+                    <div class="replies"> <strong>R: 1 / I: 0</strong> <br />Estou cansado de ficar em casa sem fazer bosta nenhuma. Estou com uns 100 temers livres e quero fazer qualquer merda essa noite em são paulo. Os anões tem alguma dica de algum lugar interessante pra se ir essa noite de carnaval?<br/><span class="spoiler">Sem baile funk, pelo amor de deus.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="2" data-bump="1488203274" data-time="1488203455">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546966.html"> <img src="//img.youtube.com/vi/8cDW0rhMcO0/0.jpg" id="img-20546966" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:47"> </a>
+                    <div class="replies"> <strong>R: 2 / I: 0</strong> <br />O que aconteceu com a rede social do Olabo? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="24" data-bump="1488203236" data-time="1488200422">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546658.html"> <img src="/b/thumb/1488200182068.jpg" id="img-20546658" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:47"> </a>
+                    <div class="replies"> <strong>R: 24 / I: 2</strong> <br />Tentei instalar o Arch Linux seguindo o tutorial desse vídeo mas não consegui. (<a href="https://href.li/?https://www.youtube.com/watch?v=zLPdWTvgydU" rel="nofollow" target="_blank">https://www.youtube.com/watch?v=zLPdWTvgydU</a>)<br/><br/>Amanhã quero tenta de novo, algum anão entendido gostaria de me recomendar algum tutorial? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="510" data-bump="1488203041" data-time="1487999056">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20524152.html"> <img src="/b/thumb/1487998816050.jpg" id="img-20524152" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:44"> </a>
+                    <div class="replies"> <strong>R: 510 / I: 287</strong> <br /><span class="heading">WEBM <a href="/pr0n/index.html">&gt;&gt;&gt;/pr0n/</a> ESPECIAL DE CARNAVAL.</span><br/><br/><span class="heading">ESCOLA UNIDOS DA CONFRARIA DOS COMEDORES DE CU.</span><br/><br/>Samba de enredo: Coçadinha no cu. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="11" data-bump="1488202965" data-time="1488184089">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545976.html"> <img src="/b/thumb/1488183849719.jpg" id="img-20545976" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:42"> </a>
+                    <div class="replies"> <strong>R: 11 / I: 1</strong> <br />Defina essa imagem com uma palavra. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="6" data-bump="1488202954" data-time="1488171530">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544896.html"> <img src="/b/thumb/1488171290540.jpg" id="img-20544896" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:42"> </a>
+                    <div class="replies"> <strong>R: 6 / I: 0</strong> <br />Alguém <span class="spoiler">ainda</span> joga herois da tempestade? Quer jogar? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="12" data-bump="1488202874" data-time="1488197650">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546477.html"> <img src="/b/thumb/1488197410033.jpg" id="img-20546477" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:41"> </a>
+                    <div class="replies"> <strong>R: 12 / I: 1</strong> <br /><span class="quote">&gt;sou contratado para montar um cenário em uma casa no meio da selva amazônica </span><br/><span class="quote">&gt;três horas de viagem até o hotel de selva</span><br/><span class="quote">&gt;logo sou mandado para o local para fazer a montagem</span><br/><span class="quote">&gt;horas depois chega os produtores e descubro o motivo da montagem</span><br/><span class="quote">&gt;reality show de celebridades</span><br/><span class="quote">&gt;só que celebridades da China</span><br/><span class="quote">&gt;chineses em rage por ter a bandeira do Brasil no barco</span><br/><span class="quote">&gt;equipe de 20 pessoas e as diárias no hotel é 3287</span><br/><span class="quote">&gt;meu trabalho era montar um mercadinho </span><br/><span class="quote">&gt;chineses nunca gostam de nada e gostaram do meu trabalho de primeira</span><br/><span class="quote">&gt;vejo uma pasteleira bonita mas nem é o que esse chan fala</span><br/>Eu só queria compartilhar isso com vocês, eu não tenho amigo para conversar. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="31" data-bump="1488202379" data-time="1488185999">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546038.html"> <img src="/b/thumb/1488185758978.jpg" id="img-20546038" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:32"> </a>
+                    <div class="replies"> <strong>R: 31 / I: 19</strong> <br />Bom dia, /b/. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="17" data-bump="1488202334" data-time="1488170741">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544742.html"> <img src="/b/thumb/1488170501584.jpg" id="img-20544742" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:32"> </a>
+                    <div class="replies"> <strong>R: 17 / I: 5</strong> <br />Comprei uma GTX 980, não vejo a hora dela chegar e eu poder jogar esse caralhudo em 4K. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="67" data-bump="1488202098" data-time="1488157804">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542655.html"> <img src="//img.youtube.com/vi/nktY6sHuFj8/0.jpg" id="img-20542655" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:28"> </a>
+                    <div class="replies"> <strong>R: 67 / I: 23</strong> <br />Adoro essas besteiras. <br/>Não vai mudar em nada minha vida, mas essas teorias/trivias são tão gostosas de ver, discutir. Tornam as obras mais interessantes até do que elas são (ou até que os autores imaginavam inicialmente).<br/>Não apenas sobre jogos, mas sobre livros, filmes, séries. <br/><span class="quote"><br/>&gt;o Homem de Judeu (Randall Flagg) e outros personagens que atravessam vários livros do Stephen King, conectando as obras</span><br/><span class="quote">&gt;Agente Smith é o verdadeiro escolhido em Matrix</span><br/><span class="quote">&gt;Kal-el tem o poder de ofuscar a mente das pessoas pra que não o reconheçam como Clark</span><br/><span class="quote">&gt;Elza é parente do Tarzan</span><br/><span class="quote">&gt;K é judeu</span><br/><span class="quote">&gt;os Stark pertencem ao lado paixão na mitologia de Game of Thrones</span><br/><span class="quote">&gt;Tarantino's Mind</span><br/><span class="quote">&gt;Fallout e Skyrim estão no mesmo universo</span><br/><span class="quote">&gt;Hurley de Lost é o Piggy de O Senhor das Moscas</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="8" data-bump="1488201922" data-time="1488198535">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546549.html"> <img src="/b/thumb/1488198295831.png" id="img-20546549" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:25"> </a>
+                    <div class="replies"> <strong>R: 8 / I: 1</strong> <br />Se a Bíblia está errada, por que os nomes mais populares no MUNDO TODO são de origem bíblica?<br/><span class="quote">&gt;Abraham (Abraão)</span><br/><span class="quote">&gt;Luke (Lucas0</span><br/><span class="quote">&gt;John (João)</span><br/><span class="quote">&gt;James (Thiago)</span><br/><span class="quote">&gt;<span class="spoiler">Myiamoto Musashi</span></span>
+                    </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="8" data-bump="1488201838" data-time="1488178259">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545706.html"> <img src="/b/thumb/1488178018921.jpg" id="img-20545706" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:23"> </a>
+                    <div class="replies"> <strong>R: 8 / I: 2</strong> <br />Me contem onde foi que tudo deu errado.<br/><br/>Estava certo antes? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488201572" data-time="1488200899">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546702.html"> <img src="//img.youtube.com/vi/7lfzDGEh5g4/0.jpg" id="img-20546702" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:19"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 2</strong> <br /><span class="heading">COMO É FEITA A REENGENHARIA SOCIAL PARA QUE A SOCIEDADE ACEITE O QUE SEMPRE FOI INACEITÁVEL</span><br/><br/>1) Encontre um problema da sociedade e amplifique seus transtornos e malefícios. Se for o caso, transforme um pequeno incômodo em um problema gigantesco, ou ainda, se preferir, invente um problema.<br/><br/>2) Concentre todas suas energias em divulgar este problema. Faça abaixo-assinados, protestos, passeatas e incentive os militantes até que todos repitam, em uníssono: "alguém precisa fazer alguma coisa".<br/><br/>3) Apareça no momento exato, com a solução perfeita para a situação, afinal de contas ela estava pronta antes mesmo do problema "aparecer". Não se esqueça de revestir a solução com boas intenções, caso contrário as pessoas não vão entregar mais um pedaço da sua liberdade tão facilmente.<br/><br/>Reparem bem os noticiários de agora em diante e acompanhe os três estágios se desenvolvendo diariamente e bem diante dos seus olhos.<br/><br/>Existe outra técnica que tem funcionado e por isso se repete sem cessar. Trata-se de uma técnica avançada para inicialmente amenizar os ataques sofridos por uma ideia e gradualmente aumentar sua aceitação com o objetivo final de implantar, inverter ou destruir valores. Seis passos para aprovar uma proposta absurda:<br/><br/>PASSO 1. Uma proposta tão ofensiva que nem deveria ser comentada em público é defendida por alguém respeitado;<br/><br/>PASSO 2. O público fica assustado e indignado, mas o assunto já está sendo discutido;<br/><br/>PASSO 3. O fato de estarem falando neste assunto se torna o “assunto” do debate público;<br/><br/>PASSO 4. A repetição dilui a importância dos aspectos mais “assustadores” da proposta;<br/><br/>PASSO 5. O assunto tema da proposta passa a ser comum;<br/><br/>PASSO 6. O debate gira em torno de "moderar" a proposta, de torná-la<br/><br/>O domínio destas seis práticas possibilita controlar reações, e o seu conhecimento é a única forma de perceber a manipulação constante e permanente. O poder de controlar reações é o poder de prever tendências sociais com maior margem de acerto. É o verdadeiro e máximo poder. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="143" data-bump="1488201466" data-time="1487975599">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20520285.html"> <img src="/b/thumb/1487975359167-0.png" id="img-20520285" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:17"> </a>
+                    <div class="replies"> <strong>R: 143 / I: 76</strong> <br /><strong>Qual foi a depósito a quem você mais prestou "homenagens"?</strong><br/><br/>Fodendo Viviane Araújo.<br/>Se juntasse todas vezes que eu bati punheta para essa vagabunda daria para encher vários galões de porra, literalmente um depósito de porra. Foram anos contínuos da minha infância e adolescência batendo punheta <span class="spoiler">quase sempre</span> para a mesma depósito, e de vez em quando bato uma para matar a saudade. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="73" data-bump="1488201423" data-time="1488167609">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544209.html"> <img src="/b/thumb/1488167369198.png" id="img-20544209" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:17"> </a>
+                    <div class="replies"> <strong>R: 73 / I: 18</strong> <br />Qual é o seu sabor favorito de:<br/><span class="quote">&gt;pizza</span><br/><span class="quote">&gt;pastel</span><br/><span class="quote">&gt;suco</span><br/><span class="quote">&gt;refrigerante</span><br/><span class="quote">&gt;miojo</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="30" data-bump="1488201391" data-time="1488195925">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546358.html"> <img src="/b/thumb/1488195685727.gif" id="img-20546358" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:16"> </a>
+                    <div class="replies"> <strong>R: 30 / I: 8</strong> <br /><span class="heading"> MINHA HEMORRÓIDA ESTOROU, FINALMENTE! </span><br/><br/>Puta merda, tinha que compartilhar isso com alguém.<br/>Como estou feliz, caras, finalmente essa desgraça estorou, depois de uma semana me atormentando, fui cagar agora e praticamente menstruei pelo cu, mas pelo menos me livrei dessa desgraça que tava me impedindo até de sentar. <br/>Vamos ver se a próxima demora pelo menos uns 3 anos pra aparecer. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="174" data-bump="1488200818" data-time="1488151618">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541481.html"> <img src="/b/thumb/1488151378512.jpg" id="img-20541481" data-subject="STARDEW VALLEY" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:06"> </a>
+                    <div class="replies"> <strong>R: 174 / I: 58</strong>
+                        <p class="intro"><span class="subject">STARDEW VALLEY</span></p><span class="heading">Caralho, muito obrigado ao anão que me recomendou essa mestrepeça, fazia tempo que eu não viciava em um jogo desse jeito.</span><br/><br/><span class="heading">De início achei o jogo bem chato, até pensei em desistir, mas depois que minha fazenda começou a crescer e eu casei, puta que pariu, eu joguei durante 12 horas sem parar, 25 reais mais bem gastos em um joguinho.</span><br/><br/><span class="heading">Also, alguma dica para um anão que acabou de entrar no ano 2?</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="11" data-bump="1488200775" data-time="1488193999">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546257.html"> <img src="/b/thumb/1488193759572.png" id="img-20546257" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:06"> </a>
+                    <div class="replies"> <strong>R: 11 / I: 5</strong> <br />Check. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="22" data-bump="1488200568" data-time="1488194178">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546262.html"> <img src="/b/thumb/1488193938035.jpg" id="img-20546262" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 13:02"> </a>
+                    <div class="replies"> <strong>R: 22 / I: 9</strong> <br /><span class="heading">É SEGUNDORIA!</span><br/><br/>Thread semanal para admiração do melhor prefeito. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="29" data-bump="1488200303" data-time="1488188971">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546116.html"> <img src="/b/thumb/1488188731349-0.jpg" id="img-20546116" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:58"> </a>
+                    <div class="replies"> <strong>R: 29 / I: 7</strong> <br />Podemos ter um parênquima paliçádico de viados antes e depois de apanharem?<br/><br/>Sim, podemos. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="44" data-bump="1488200229" data-time="1488194985">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546300.html"> <img src="/b/thumb/1488194745950.jpg" id="img-20546300" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:57"> </a>
+                    <div class="replies"> <strong>R: 44 / I: 4</strong> <br />Quantos animes uma pessoa precisa completar para ser considerada anime pro/hardcore? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="32" data-bump="1488200222" data-time="1488180814">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545853.html"> <img src="/b/thumb/1488180574873.png" id="img-20545853" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:57"> </a>
+                    <div class="replies"> <strong>R: 32 / I: 9</strong> <br /><span class="quote">&gt;filho da puta é um macaco que pegava todas no colégio (particular) que eu estudava, inclusive a depósito que eu era apaixonadinho</span><br/><span class="quote">&gt;pai sempre deu de tudo, até um mãefodendo carro quando fez 18 anos</span><br/><span class="quote">&gt;marginal do caralho, está simplesmente servindo de piloto de fuga pra macacos assaltarem pessoas no próprio bairro que vive desde que nasceu (fui vítima)</span><br/><span class="spoiler">&gt;depósito <em>quietinha</em> de 10 anos atrás hoje é uma vadia alternativa que dá pra ele sempre que ele quer</span><br/><span class="quote">&gt;ninguém pode fazer nada porque a polícia simplesmente ignora os chamados do 190</span><br/><br/>Estava no terraço pensando na vida e vi esse desgraçado rondando por aqui. Só na frente da minha casa, passou 4 vezes. Provavelmente estão procurando desatentos que estão voltando das festas de carnaval.<br/><br/>Caralho, essa sensação de impotência é uma porra. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="28" data-bump="1488199990" data-time="1488165811">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543905.html"> <img src="/b/thumb/1488165571056.jpg" id="img-20543905" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:53"> </a>
+                    <div class="replies"> <strong>R: 28 / I: 1</strong> <br />Qual que vence, bê? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="69" data-bump="1488199982" data-time="1488153290">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541849.html"> <img src="/b/thumb/1488153050629.jpg" id="img-20541849" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:53"> </a>
+                    <div class="replies"> <strong>R: 69 / I: 13</strong> <br />NF: Parênquima paliçádico dos anões com depressão<br/><br/>Só pode postar nesse parênquima paliçádico quem está pensando em churrasco ou apenas quer se sentir mal.<br/><br/>Sinta-se livre para postar a razão da sua depressão. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="27" data-bump="1488199879" data-time="1488197601">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546472.html"> <img src="/b/thumb/1488197361525.jpg" id="img-20546472" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:51"> </a>
+                    <div class="replies"> <strong>R: 27 / I: 7</strong> <br />É verdade que isso acontece com todo viado do chan? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="6" data-bump="1488198668" data-time="1488195821">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546350.html"> <img src="/b/thumb/1488195580946.png" id="img-20546350" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:31"> </a>
+                    <div class="replies"> <strong>R: 6 / I: 0</strong> <br />Foi queima de arquivo?<br/><br/><a href="https://href.li/?http://www1.folha.uol.com.br/poder/2017/02/1862184-chefe-do-combate-a-lavagem-de-dinheiro-no-uruguai-e-achado-morto.shtml" rel="nofollow" target="_blank">http://www1.folha.uol.com.br/poder/2017/02/1862184-chefe-do-combate-a-lavagem-de-dinheiro-no-uruguai-e-achado-morto.shtml</a><br/><br/><a href="https://href.li/?http://www.oantagonista.com/posts/secretario-do-uruguai-que-apoiava-lava-jato-e-encontrado-morto" rel="nofollow" target="_blank">http://www.oantagonista.com/posts/secretario-do-uruguai-que-apoiava-lava-jato-e-encontrado-morto</a> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="28" data-bump="1488198087" data-time="1488179180">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545759.html"> <img src="/b/thumb/1488178940520.jpg" id="img-20545759" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:21"> </a>
+                    <div class="replies"> <strong>R: 28 / I: 0</strong> <br />/b/, estou a um passo de virar de fato religioso, mais especificamente, cristão, pois é a religião com a qual mais me identifico.<br/><br/>Uma coisa me deixa com o pé atrás, porém. O que garante que a minha religião é a certa dentre tantas outras? E, se for a certa, todos os praticantes de outras religiões, mesmo sendo pessoas de bem que, devido a sua cultura regional, possuem outras crenças, irão queimar no inferno? <br/><br/>Isso me incomoda bastante. Kebabs, judeus, pasteleiros e muitos outros iriam simplesmente se fornicar? Mesmo que não tenham tido influência para virarem cristão? Mesmo que tenham sido pessoas de bem?<br/><br/>Me ilumine, /b/. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="22" data-bump="1488197724" data-time="1488187847">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546092.html"> <img src="/b/thumb/1488187607311.png" id="img-20546092" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:15"> </a>
+                    <div class="replies"> <strong>R: 22 / I: 2</strong> <br />Tem como pedir ban aos moderadores? Eu gostaria de ser banido por uns 6 meses, eu amo esse lugar, mas sinto que está me fazendo mal, talvez com isso eu me afaste um pouco. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="10" data-bump="1488197708" data-time="1488156510">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542459.html"> <img src="/b/thumb/1488156270062.jpg" id="img-20542459" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 12:15"> </a>
+                    <div class="replies"> <strong>R: 10 / I: 1</strong> <br />Problemas de cabeça e transtornos são mais provavelmente herdados geneticamente ou desenvolvidos na criação e convivência? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="5" data-bump="1488196368" data-time="1488195956">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546359.html"> <img src="/b/thumb/1488195716453.jpg" id="img-20546359" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 11:52"> </a>
+                    <div class="replies"> <strong>R: 5 / I: 0</strong> <br />Algum anão manjador de carros pode me ajudar?<br/><br/>Estou querendo trocar de carro e pegar um diesel. Tenho aula seis vezes na semana e todos esses dias eu percorro aproximadamente 65km (ida e volta) e o meu carro é econômico (11-13,6km/L), mas é um tanto que fraco e não é tão confortável de dirigir, já que onde moro acabo pegando ladeiras e irregularidades.<br/><br/>Pretendo ficar um bom tempo com o carro, no mínimo três anos. Vai ser realmente benéfico e econômico pegar um carro a diesel? Eu quero dar um upgrade mas sem sacrificar a economia de combustivel, já que esse meu percurso não vai diminuir tão cedo.<br/><br/>Vale a pena anons? Tenho aproximadamente 70k (o meu carro atual está incluso nesse valor) pra pegar um carro novo.<br/><br/>inb4 COMPRA UM CIVIC 2008 </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="8" data-bump="1488195809" data-time="1488195069">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546306.html"> <img src="/b/thumb/1488194829525.gif" id="img-20546306" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 11:43"> </a>
+                    <div class="replies"> <strong>R: 8 / I: 1</strong> <br /><span class="quote">&gt;BvS ganha 4 framboesas</span><br/><span class="quote">&gt;Esquadrão Suicida ganha 1 oscar</span><br/><br/>Realmente te faz pensar. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="34" data-bump="1488195015" data-time="1488169273">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544490.html"> <img src="/b/thumb/1488169033419.png" id="img-20544490" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 11:30"> </a>
+                    <div class="replies"> <strong>R: 34 / I: 10</strong> <br />A mídia enlouqueceu? Eu sei que é do câncro, mas é um mal necessário. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="5" data-bump="1488194301" data-time="1488192470">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546218.html"> <img src="/b/thumb/1488192230003.jpg" id="img-20546218" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 11:18"> </a>
+                    <div class="replies"> <strong>R: 5 / I: 3</strong> <br />Quem /emoe/ aqui?<br/><br/><a href="https://href.li/?https://www.youtube.com/watch?v=KTVYVTIDVEU" rel="nofollow" target="_blank">https://www.youtube.com/watch?v=KTVYVTIDVEU</a> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="16" data-bump="1488193439" data-time="1488190296">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546144.html"> <img src="/b/thumb/1488190056250.png" id="img-20546144" data-subject="Jewgle" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 11:03"> </a>
+                    <div class="replies"> <strong>R: 16 / I: 9</strong>
+                        <p class="intro"><span class="subject">Jewgle</span></p>Só vim deixar isso aqui. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="7" data-bump="1488193350" data-time="1488187297">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546077.html"> <img src="//img.youtube.com/vi/XoooX3OVGoI/0.jpg" id="img-20546077" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 11:02"> </a>
+                    <div class="replies"> <strong>R: 7 / I: 0</strong> <br />NT: músicas sobre poetas.<br/>Aqui vai uma sobre o Fernando Pessoa. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="1" data-bump="1488193131" data-time="1488192948">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546228.html"> <img src="" id="img-20546228" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:58"> </a>
+                    <div class="replies"> <strong>R: 1 / I: 1</strong> <br /><span class="heading">TS ABERTO.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="135" data-bump="1488192870" data-time="1487983542">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20521714.html"> <img src="/b/thumb/1487983302283.jpg" id="img-20521714" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:54"> </a>
+                    <div class="replies"> <strong>R: 135 / I: 63</strong> <br />Algum anão já teve alguma experiência ou relatos de ovni?<br/><br/>Se sim, por favor, relate para nós. Acho fornicação esse tipo de história. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="43" data-bump="1488192837" data-time="1488183852">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545973.html"> <img src="/b/thumb/1488183612734.jpg" id="img-20545973" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:53"> </a>
+                    <div class="replies"> <strong>R: 43 / I: 5</strong> <br />Anões extremamente feios, quando vocês desistiram de ter uma vida social?<br/><br/>Desisti com 19 anos depois de 1 semestre em uma faculdade federal, se eu não fosse tão autista e burro teria kitado logo no fundamental, e hoje seria pelo menos culto em vez de depressivo e sequelado. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="15" data-bump="1488192288" data-time="1488152510">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541674.html"> <img src="/b/thumb/1488152269990.jpg" id="img-20541674" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:44"> </a>
+                    <div class="replies"> <strong>R: 15 / I: 1</strong> <br /><a href="https://href.li/?https://www.change.org/p/j-k-rowling-petition-for-j-k-rowling-to-take-in-muslim-refugees-in-her-18-spare-bedrooms" rel="nofollow" target="_blank">https://www.change.org/p/j-k-rowling-petition-for-j-k-rowling-to-take-in-muslim-refugees-in-her-18-spare-bedrooms</a><br/><span class="quote"><br/>&gt;não estimulando a autora de Harry Bosta a aceitar refugiados em sua mansão de 18 quartos, ao invés de apenas comentar globalismo e judiarias em cancro e páçaro</span><br/><span class="quote">&gt;0 anod depois de Trump (D.T.)</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="4" data-bump="1488192106" data-time="1488191110">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20546173.html"> <img src="/b/thumb/1488190869958.jpg" id="img-20546173" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:41"> </a>
+                    <div class="replies"> <strong>R: 4 / I: 1</strong> <br />Quantos eu e outro anônimo temos por aqui dando f5 nessa bosta? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488191640" data-time="1488154932">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542228.html"> <img src="/b/thumb/1488154691557-0.gif" id="img-20542228" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:34"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 0</strong> <br />Boa noite, anões. Vocês tem vivido o 1fpsway? Tem acumulado energia? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="11" data-bump="1488191482" data-time="1488181987">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545917.html"> <img src="/b/thumb/1488181747419.jpg" id="img-20545917" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:31"> </a>
+                    <div class="replies"> <strong>R: 11 / I: 1</strong> <br />Boa noite, bê.<br/><br/>Estou buscando motivações e/ou maneiras efetivas de me disciplinar com o dinheiro, segue algumas informações em greentext:<br/><span class="quote">&gt;eu amo dinheiro</span><br/><span class="quote">&gt;eu tenho pouco dinheiro</span><br/><span class="quote">&gt;eu gasto por achar que não vale nada</span><br/><span class="quote">&gt;fico deprimido sabendo que será assim para sempre</span><br/><span class="quote">&gt;ad infinitum</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="51" data-bump="1488191417" data-time="1488171724">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544916.html"> <img src="/b/thumb/1488171483001.jpg" id="img-20544916" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 10:30"> </a>
+                    <div class="replies"> <strong>R: 51 / I: 16</strong> <br />Como você imagina que os anões são na vida real? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="70" data-bump="1488188325" data-time="1488151878">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541528.html"> <img src="/b/thumb/1488151638119.jpg" id="img-20541528" data-subject="THREAD PARA DISCUTIRMOS OCULTISMO, RELIGIÕES E TEORIAS ALEATÓRIAS" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 09:38"> </a>
+                    <div class="replies"> <strong>R: 70 / I: 20</strong>
+                        <p class="intro"><span class="subject">THREAD PARA DISCUTIRMOS OCULTISMO, RELIGIÕES E TEORIAS ALEATÓRIAS</span></p>Vou começar citando algumas besteiras que eu aprendi no /b/:<br/><span class="quote"><br/>&gt;no início, a humanidade vivia no jardim do éden, junto com deus</span><br/><span class="quote">&gt;não havia sofrimento, a vida era tranquila, porém éramos submissos a deus</span><br/><span class="quote">&gt;anjos eram seres superiores, mas também submisoss a deus</span><br/><span class="quote">&gt;um dos anjos se revolta e é expulso do jardim do éden</span><br/><span class="quote">&gt;esse anjo quer se tornar tão forte, ou tão grande quanto deus</span><br/><span class="quote">&gt;humanidade descobre o conhecimento e que pode se elevar ao grau de deus</span><br/><span class="quote">&gt;decide seguir os passos e sair do jardim do éden</span><br/><span class="quote">&gt;nós podemos nos elevarmos ao grau de deus, como um ser uno, porém teremos que passar por todas as provações desse mundo, todas as torturas, guerras e afins</span><br/><span class="quote">&gt;parte da humanidade acha isso desnecessário e quer voltar ao jardim do éden</span><br/><span class="quote">&gt;outra parte (judeus, a elite e tudo mais) quer que a humanidade continue seu caminho para elevar-se a deus</span><br/><br/>É isso mesmo? É algo parecido com isso? Queria entender isso, como buscar cal e cimento?<br/><br/>Os anjos seriam povos? A humanidade inicial seria um único ser que veio para esse mundo e se dividiu em milhares para passar pelas provações e voltar a ser uno como deus?<br/><br/>O que poderiam me dizer sobre isso?<br/><br/>Outra conclusão que eu tirei:<br/><span class="quote"><br/>&gt;mão sonserina: volta ao jardim do éden, evitar tentações desse mundo</span><br/><span class="quote">&gt;caminho do meio: acabar com o ego, sair desse plano por contra própria e tornar-se um ser a parte, seria como uma eterna aventura</span><br/><span class="quote">&gt;mãe Grifinoria: atirar-se as tentações, viver o máximo de experiência, elevar-se ao grau de deus</span><br/><br/>O que acham?<br/><br/>Sou um idiota, são apenas coisas que eu leio por aqui, junto tudo e sai toda essa merda, me corrijam, por favor. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="63" data-bump="1488188204" data-time="1488175305">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545388.html"> <img src="/b/thumb/1488175065428-0.jpg" id="img-20545388" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 09:36"> </a>
+                    <div class="replies"> <strong>R: 63 / I: 27</strong> <br />Anônimo, como vão os seus planos parar deixar o Brasil?<br/>Com que trabalhará? Pegará cidadania? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="14" data-bump="1488186361" data-time="1488174845">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545344.html"> <img src="/b/thumb/1488174605862.png" id="img-20545344" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 09:06"> </a>
+                    <div class="replies"> <strong>R: 14 / I: 7</strong> <br />Tomar no cu, resolveram apagar o parênquima paliçádico na hora que terminei. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="805" data-bump="1488183836" data-time="1488149090">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20540965.html"> <img src="/b/thumb/1488148850200-0.jpg" id="img-20540965" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 08:23"> </a>
+                    <div class="replies"> <strong>R: 805 / I: 156</strong> <br />Stream do pior Oscar onde? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="7" data-bump="1488183518" data-time="1488177602">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545643.html"> <img src="/b/thumb/1488177362084.jpg" id="img-20545643" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 08:18"> </a>
+                    <div class="replies"> <strong>R: 7 / I: 2</strong> <br />/r/ o /cc/ de um trecho do podcast do Arthur Petry onde ele começa dizendo que está deitado na cama mas não consegue se mover e está com uma vontade absurda de gritar mas não pode porque a mãe dele está no quarto ao lado.<br/><br/>Ele também diz que não há nada de errado em ser triste e algumas coisas desse tipo. Esse /cc/ foi postado no sábado, eu acho, numa thread onde o OP postou aquele texto onde ele se imaginava violando uma loli na praça.<br/><br/>Pago com o que estiver ao meu alcance. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="7" data-bump="1488182890" data-time="1488181596">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545899.html"> <img src="/b/thumb/1488181356508.png" id="img-20545899" data-subject="Saída código C" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 08:08"> </a>
+                    <div class="replies"> <strong>R: 7 / I: 1</strong>
+                        <p class="intro"><span class="subject">Saída código C</span></p>Olá, anões.<br/><br/>Peço para que vocês verifiquem o meu código e me expliquem o que está errado para que a saída não seja como o esperado. Meu código:<br/><code><pre class='prettyprint' style='display:inline-block'><br/>void main(){<br/>    char linha[81],linha2[241],alfabeto[]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'},<br/>    alfabeto2[]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};<br/>    int tamanho=sizeof(alfabeto)/sizeof(char), index=0,index2=0;<br/>    printf("Digite uma mensagem de até 80 caracteres\n");<br/>    fgets(linha,81,stdin);<br/>    while (linha[index+1]!=0 &amp;&amp; index&lt;81){<br/>        for(int j=0; j&lt;sizeof(alfabeto)/sizeof(char);j++){<br/>            if (linha[index]==alfabeto[j]){<br/>                if (alfabeto[j]=='z'){<br/>                    linha2[index2]='a';linha2[index2+1]='a';linha2[index2+2]='a';<br/>                }<br/>                else{<br/>                    linha2[index2]=alfabeto[j+1];linha2[index2+1]=alfabeto[j+1];linha2[index2+2]=alfabeto[j+1];<br/>                }<br/>                index2+=3;<br/>                break;<br/>            }<br/>            else if(linha[index]==alfabeto2[j]){<br/>                if(alfabeto2[j]=='Z'){<br/>                    linha2[index2]='A';linha2[index2+1]='A';linha2[index2+2]='A';<br/>                }<br/>                 else{<br/>                    linha2[index2]=alfabeto2[j+1];linha2[index2+1]=alfabeto2[j+1];linha2[index2+2]=alfabeto2[j+1];<br/>                }<br/>                index2+=3;<br/>                break;<br/>            }<br/>        }<br/>        index++;<br/>    }<br/>    puts(linha2);<br/>}<br/></pre></code><br/><br/>O programa deve receber uma mensagem de até 80 caracteres e retornar uma mensagem codificada, que pega a próxima letra do alfabeto e substitui por três delas. Nesse caso, se fosse passado abc, deveria ser retornado bbbcccddd. O problema é que ele está imprimindo coisa a mais, se não me engano é algo referente ao endereço da memória do espaço do vetor. <br/><br/>Poderiam me dizer como evitar isso de alguma forma eficiente e de preferência simples? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="4" data-bump="1488182404" data-time="1488182342">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545932.html"> <img src="//img.youtube.com/vi/YKApB_enBUs/0.jpg" id="img-20545932" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 08:00"> </a>
+                    <div class="replies"> <strong>R: 4 / I: 1</strong> <br />Qual a melhor "Mad Opening" de animus que você viu?<br/><br/>Eu começo. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488182318" data-time="1488180921">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545858.html"> <img src="/b/thumb/1488180681563.png" id="img-20545858" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:58"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 1</strong> <br />Como conseguem dar credibilidade para esse cara? Eu vi metade de um video e já percebi que ele é completamente louco.<br/><br/><span class="spoiler">Financiado pelo Soros para desmoralizar a sonserina.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="9" data-bump="1488182106" data-time="1488181207">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545875.html"> <img src="/b/thumb/1488180967785.jpg" id="img-20545875" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:55"> </a>
+                    <div class="replies"> <strong>R: 9 / I: 1</strong> <br />No parênquima paliçádico de pr0n não souberam me responder pela tarde. Vocês saberiam o nome da puta relatada? <br/><br/>Also, <br/>NT: Coisas querem moar/sauce/indetificação. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="16" data-bump="1488181488" data-time="1488177838">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545662.html"> <img src="/b/thumb/1488177598306.jpg" id="img-20545662" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:44"> </a>
+                    <div class="replies"> <strong>R: 16 / I: 8</strong> <br />Quem quer ver CP ao vivo?<br/><br/><span class="spoiler"><a href="https://href.li/?https://pt.cam4.com/thayssinha" rel="nofollow" target="_blank">https://pt.cam4.com/thayssinha</a></span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="10" data-bump="1488180828" data-time="1488179684">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545788.html"> <img src="/b/thumb/1488179444017.png" id="img-20545788" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:33"> </a>
+                    <div class="replies"> <strong>R: 10 / I: 4</strong> <br /><span class="spoiler">ELE SABE O QUE REALMENTE ACONTECEU.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="37" data-bump="1488180372" data-time="1488150350">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541220.html"> <img src="/b/thumb/1488150109987.jpg" id="img-20541220" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:26"> </a>
+                    <div class="replies"> <strong>R: 37 / I: 5</strong> <br /><span class="quote">&gt;não uso anti-vírus</span><br/><span class="quote">&gt;apenas baixo torrents confiáveis</span><br/><span class="quote">&gt;uso ublock e https everywhere</span><br/><span class="quote">&gt;decido fazer um relatório no computador pra ver se não estou com alguma ameaça</span><br/><br/>Estou limpo, /b/?<br/>Qual o melhor programa pra eu fazer as analises de vez em quando? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="254" data-bump="1488180237" data-time="1488153303">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541850.html"> <img src="/b/thumb/1488153062657.gif" id="img-20541850" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:23"> </a>
+                    <div class="replies"> <strong>R: 254 / I: 84</strong> <br />Vocês já bateram alguma vez em uma bostalher?<br/><span class="quote"><br/>&gt;ensino médio</span><br/><span class="quote">&gt;aula de educação física</span><br/><span class="quote">&gt;jogo do vôlei</span><br/><span class="quote">&gt;me atrapalho e acabo escorregando na quadra</span><br/><span class="quote">&gt;sinto dor no joelho</span><br/><span class="quote">&gt;vou sentar na arquibancada</span><br/><span class="quote">&gt;vadia vem para perto de mim rindo, me zoando por conta da queda</span><br/><span class="quote">&gt;ainda sentindo dor, mando ela tomar no cu</span><br/><span class="quote">&gt;ela continua me importunando</span><br/><span class="quote">&gt;sangue sobe pra cabeça</span><br/><span class="quote">&gt;empurro ela do último degrau da arquibancada</span><br/><span class="quote">&gt;ela cai de costas e vira uma cambalhota contrária, rolando até o primeiro degrau da arquibancada</span><br/><span class="quote">&gt;levanto e piso na cara dela</span><br/><span class="quote">&gt;tênis abre um pequeno corte no rosto dela</span><br/><span class="quote">&gt;vagabunda começa a chorar</span><br/><span class="quote">&gt;todo mundo vem socorrê-la</span><br/><span class="quote">&gt;mangina vem me segurar, mas dou uma cotovelada no meio do peito dele e ele me solta</span><br/><span class="quote">&gt;chamam a coordenadora</span><br/><span class="quote">&gt;duas semana de suspensão</span><br/><span class="quote">&gt;0 fucks given</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="39" data-bump="1488180112" data-time="1488173280">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545154.html"> <img src="/b/thumb/1488173040802.jpg" id="img-20545154" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:21"> </a>
+                    <div class="replies"> <strong>R: 39 / I: 3</strong> <br />Jiu jitsu é a melhor arte marcial e mais efetiva, concordam? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="488" data-bump="1488179659" data-time="1488041995">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20527377.html"> <img src="/b/thumb/1488041752188.jpg" id="img-20527377" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:14"> </a>
+                    <div class="replies"> <strong>R: 488 / I: 388</strong> <br /><span class="quote">&gt;não webm/mp4</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="219" data-bump="1488179532" data-time="1488112017">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20535519.html"> <img src="/b/thumb/1488111777272.png" id="img-20535519" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:12"> </a>
+                    <div class="replies"> <strong>R: 219 / I: 137</strong> <br />NT: Faps que você regreta. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="4" data-bump="1488179467" data-time="1488177692">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545651.html"> <img src="/b/thumb/1488177452026.png" id="img-20545651" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:11"> </a>
+                    <div class="replies"> <strong>R: 4 / I: 4</strong> <br />/r/ o reaction do 'eita gota serena', por gentileza. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="40" data-bump="1488179008" data-time="1488160813">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543128.html"> <img src="/b/thumb/1488160572763.gif" id="img-20543128" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 07:03"> </a>
+                    <div class="replies"> <strong>R: 40 / I: 9</strong> <br />NT​: Histórias de bebedeiras, engraçadas ou não. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="14" data-bump="1488178606" data-time="1488157148">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542544.html"> <img src="/b/thumb/1488156908736.jpg" id="img-20542544" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:56"> </a>
+                    <div class="replies"> <strong>R: 14 / I: 1</strong> <br /><span class="quote">&gt;não tendo filhos com depósitos de várias raças e enjoando ter filhos das mais variadas etnia que Deus botou no mundo</span><br/><br/>Finalmente plebeu, os romanos e gregos faziam isso. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="18" data-bump="1488178497" data-time="1488174843">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545343.html"> <img src="/b/thumb/1488174603566.jpg" id="img-20545343" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:54"> </a>
+                    <div class="replies"> <strong>R: 18 / I: 3</strong> <br />Por que homem sente prazer anal?<br/><br/>A pica relatada é muito mais prazerosa que DotA vaginal. Você goza como nunca. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="11" data-bump="1488178426" data-time="1488176371">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545510.html"> <img src="/b/thumb/1488176131825.png" id="img-20545510" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:53"> </a>
+                    <div class="replies"> <strong>R: 11 / I: 0</strong> <br />Recomendem um antivírus para eu colocar no computador do meu velho.<br/><br/>A gente usava o Avira, que funcionava muito bem, porém de uns meses pra cá ele esta dando algum conflito (confirmado ao desativar o anti-virus pelo msconfig, tentar reinstalar e etc) e é literalmente impossível convence-lo a formatar a máquina. <br/><br/>Sei que é coisa de bovino mas isso deixa meu sono (e o dele) mais tranquilo. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="5" data-bump="1488178124" data-time="1488168904">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544427.html"> <img src="/b/thumb/1488168664394.png" id="img-20544427" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:48"> </a>
+                    <div class="replies"> <strong>R: 5 / I: 2</strong> <br />Agora no começo do ano não ia ter concurso para <span class="spoiler">trabalhar de graça</span> moderador? O que aconteceu? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="3" data-bump="1488177893" data-time="1488177895">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545671.html"> <img src="//img.youtube.com/vi/If8c81lyAyc/0.jpg" id="img-20545671" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:44"> </a>
+                    <div class="replies"> <strong>R: 3 / I: 0</strong> <br />E aí, /b/, o que estão esperando para treinar o fodendo Pa-Kua? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="6" data-bump="1488177890" data-time="1488176000">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545464.html"> <img src="/b/thumb/1488175760849.jpg" id="img-20545464" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:44"> </a>
+                    <div class="replies"> <strong>R: 6 / I: 2</strong> <br />Prove que existe um desodorante melhor que esse.<br/><br/>Falhe miseravelmente. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="20" data-bump="1488177763" data-time="1488175506">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545406.html"> <img src="/b/thumb/1488175265402.gif" id="img-20545406" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:42"> </a>
+                    <div class="replies"> <strong>R: 20 / I: 6</strong> <br />Amanhã estou de folga e meus amigos descolados me chakosherm para ir para uma rave. Devo ir?<br/><br/>Eles já disseram que vai rolar MDMA. Já disse que não curto essas coisas e que quero ficar "de boa".<br/><br/>Eu gosto de música eletrônica. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="87" data-bump="1488177679" data-time="1488149773">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541092.html"> <img src="/b/thumb/1488149533135-0.jpg" id="img-20541092" data-subject="O que houve com esse pseudoestudante?" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:41"> </a>
+                    <div class="replies"> <strong>R: 87 / I: 20</strong>
+                        <p class="intro"><span class="subject">O que houve com esse pseudoestudante?</span></p><span class="quote">&gt;falho</span><br/><span class="quote">&gt;sai do anonimato para ser um dos mais inteligentes do bostil</span><br/><span class="quote">&gt;95% do BAR MITZVAH concluided</span><br/><span class="quote">&gt;convidado para programas como fantástico e programas locais</span><br/><br/>"O cearense João Vitor, estudante de escola pública, acertou nada mais nada menos do que 95% da prova do Bar mitzvah. O desempenho excelente e a história de superação do menino de 16 anos emocionaram Fátima e seus convidados."<br/><br/>"“Ele nem dormia e nem assistia televisão. Só estudava. Eu não tive a oportunidade deles. Tentei passar o que eu não tive para eles. Não basta só colocar no colégio. Tem que acompanhar e cobrar. O João sempre gostou de estudar e reparei que ele faltou dois dias. Vi que tinha alguma coisa errada e ele me falou que o sapato dele furou. Não era por causa de um sapato que ele não ia terminar os estudos. Falei com meu pai e ele comprou um sapato para ele voltou a estudar”, revela."<br/><br/><a href="https://href.li/?http://gshow.globo.com/programas/encontro-com-fatima-bernardes/O-Programa/noticia/2014/12/fenomeno-do-enem-chora-ao-lembrar-que-so-sapato-furado-o-fez-matar-aula.html" rel="nofollow" target="_blank">http://gshow.globo.com/programas/encontro-com-fatima-bernardes/O-Programa/noticia/2014/12/fenomeno-do-enem-chora-ao-lembrar-que-so-sapato-furado-o-fez-matar-aula.html</a><br/><span class="quote"><br/>&gt;fraude detected</span><br/><span class="quote">&gt;o que adianta ter 95% do BAR MITZVAH  e zerar redação por não saber escrever?</span><br/><br/><a href="https://href.li/?http://tribunadoceara.uol.com.br/noticias/educacao/nota-da-redacao-tira-vaga-na-universidade-para-menino-fenomeno-enem/" rel="nofollow" target="_blank">http://tribunadoceara.uol.com.br/noticias/educacao/nota-da-redacao-tira-vaga-na-universidade-para-menino-fenomeno-enem/</a><br/><br/>"“A nota da Redação foi muito baixa. Ele conseguiu vaga para estudar em Alagoas, mas não quis ir para lá”, conta o diretor da escola, Otacílio Bessa. João Vitor já havia informado que o desempenho na prova não seria tão bom, por considerar a avaliação a mais difícil. “Ele sabia que seria difícil, mesmo assim ficou meio depressivo quando viu o resultado”, confidencia."<br/><br/>Anões, alguém pode me dizer o que houve com esse nordestino? <br/><br/>Depois de descobrirem mal saber escrever, houve uma forte discussão sobre métodos de ingresso nas federais. Mas, o nordestino voltou para o anonimato e nunca mais soube que fim levou o pobre celestino. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="2" data-bump="1488177522" data-time="1488177178">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545598.html"> <img src="//img.youtube.com/vi/Gh8PpX1AMx0/0.jpg" id="img-20545598" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:38"> </a>
+                    <div class="replies"> <strong>R: 2 / I: 1</strong> <br />Anões do /comp/ in a nutshell. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="2" data-bump="1488176694" data-time="1488176826">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545561.html"> <img src="/b/thumb/1488176586800.png" id="img-20545561" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:24"> </a>
+                    <div class="replies"> <strong>R: 2 / I: 0</strong> <br />Podem postar algumas músicas tristes? Obrigado desde já. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="15" data-bump="1488176459" data-time="1488170477">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544698.html"> <img src="/b/thumb/1488170237645.jpg" id="img-20544698" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:20"> </a>
+                    <div class="replies"> <strong>R: 15 / I: 2</strong> <br />Anões, antes eu me arrepiava todo vendo ASMR, e agora não sinto nada. O que aconteceu? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="0" data-bump="1488176049" data-time="1488176049">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545472.html"> <img src="//img.youtube.com/vi/JgM4auRw2Tc/0.jpg" id="img-20545472" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:14"> </a>
+                    <div class="replies"> <strong>R: 0 / I: 0</strong> <br />Já apreciaram canções sobre o fascismo de Sião hoje, anões? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="108" data-bump="1488176041" data-time="1488138790">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20539155.html"> <img src="//img.youtube.com/vi/0HYq9kTOT70/0.jpg" id="img-20539155" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:14"> </a>
+                    <div class="replies"> <strong>R: 108 / I: 28</strong> <br /><span class="quote">&gt;você nunca vai fazer esse belo percurso relaxante toda noite logo depois de um longo dia de trabalho num escritório</span><br/><span class="quote">&gt;você nunca vai chegar em casa cansado e ser recebido por sua eposa japonesa com um jantar pronto e seu casal de filhos pequenos mostrando as notas altas da escola</span><br/><span class="quote">&gt;você nunca vai sair de casa sem se preocupar se vai levar um tiro de um ladrão por conta de um celular que ele vai vender por 50 reais ou até por causa de um olhar errado</span><br/><span class="quote">&gt;você nunca vai morar numa cidade tão linda e moderna quanto essa</span><br/><br/>Me respondam, por quê viver? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="57" data-bump="1488175880" data-time="1488167374">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544174.html"> <img src="/b/thumb/1488167134551.jpg" id="img-20544174" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:11"> </a>
+                    <div class="replies"> <strong>R: 57 / I: 8</strong> <br />Boa noite, anões. <br/>Meu objetivo aqui é expurgar os seus problemas. Abram o jogo, sejam sinceros, contem seus problemas que vou ajudá-los a resolver, ou pelo menos fazê-los enxergar por outro ponto de vista, pra que vocês mesmo resolvam. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="64" data-bump="1488175735" data-time="1488166731">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544069.html"> <img src="/b/thumb/1488166491249.jpg" id="img-20544069" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:08"> </a>
+                    <div class="replies"> <strong>R: 64 / I: 11</strong> <br />Cadê os anões que têm aversão ao hedonismo?<br/>Puta que pariu, como eu odeio hedonistas com toda as minhas forças, degenerados viciados em prazer.<br/>Parecem drogados que não se saciam com porra nenhuma.<br/>Abro o catálogo e praticamente só tem parênquima paliçádico de pr0n, esse lugar já foi melhor. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="9" data-bump="1488175724" data-time="1488095443">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20534777.html"> <img src="/b/thumb/1488095203127.png" id="img-20534777" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:08"> </a>
+                    <div class="replies"> <strong>R: 9 / I: 0</strong> <br />Memrise é um bom site para auxiliar no aprendizado de uma nova língua? <br/>A versão gratuita deixa muito a desejar se comparada com a versão paga?<br/>O quão diferente é do Anki? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="15" data-bump="1488175662" data-time="1488173377">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545169.html"> <img src="/b/thumb/1488173137731.jpg" id="img-20545169" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:07"> </a>
+                    <div class="replies"> <strong>R: 15 / I: 2</strong> <br />Anãos, alguém sabe onde eu encontro esses bonés em SP? Tem que ser falsificado, mas discreto sem chamar muita atenção pro nome do boné. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="35" data-bump="1488175467" data-time="1488168001">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544273.html"> <img src="//img.youtube.com/vi/biRBK0wUZnI/0.jpg" id="img-20544273" data-subject="RAGEOU, CRINJOU, PERDEU" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:04"> </a>
+                    <div class="replies"> <strong>R: 35 / I: 2</strong>
+                        <p class="intro"><span class="subject">RAGEOU, CRINJOU, PERDEU</span></p>Versão Youtube.<br/><span class="quote"><br/><br/>&gt;booktuber</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="16" data-bump="1488175303" data-time="1488169045">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544450.html"> <img src="/b/thumb/1488168805309.jpg" id="img-20544450" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 06:01"> </a>
+                    <div class="replies"> <strong>R: 16 / I: 3</strong> <br />Ajudem, /b/.<br/><br/>Tem um fodendo grilo dentro da minha casa. Ele está berrando feito boi perdido e fica pulando de um lado da casa para o outro. Eu tentei pegar uma vassoura e levar ele para fora, mas o filho da puta saiu voando e quase me matou de susto. Estou trancado no quarto e a última vez que o vi ele estava na sala.<br/><br/>tl;dr /r/ maneiras de tirar um grilo da minha casa. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="4" data-bump="1488174912" data-time="1488174652">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545326.html"> <img src="/b/thumb/1488174412140.jpg" id="img-20545326" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:55"> </a>
+                    <div class="replies"> <strong>R: 4 / I: 3</strong> <br />Ela cresceu! </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="25" data-bump="1488174355" data-time="1488155764">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542370.html"> <img src="/b/thumb/1488155524475.png" id="img-20542370" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:45"> </a>
+                    <div class="replies"> <strong>R: 25 / I: 6</strong> <br />Como está o no-fap de vocês, anões?<br/><br/>Esse feriado tá difícil pra mim, estou quase quebrando ele, mas vou me segurar. Dia de semana é mais fácil porque trabalho até tarde e chego em casa cansado, já vou logo dormir e nem penso em punheta, mas todo esse tempo livro só tem dificultado tudo.<br/><br/>Also, também bate uma carência por falta de depósito de porra que não batia quando eu podia simplesmente punhetar.<br/><br/>Pica relata é meu progresso, quase chegando no primeiro mês, estou almejando fazer o reboot de 90 dias. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="10" data-bump="1488174315" data-time="1488173837">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545229.html"> <img src="/b/thumb/1488173597055.png" id="img-20545229" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:45"> </a>
+                    <div class="replies"> <strong>R: 10 / I: 3</strong> <br />eai anaozada ouvi dizerem que os mod tao no carnaval kk procede ? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="48" data-bump="1488174209" data-time="1488146721">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20540572.html"> <img src="/b/thumb/1488146481785-0.png" id="img-20540572" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:43"> </a>
+                    <div class="replies"> <strong>R: 48 / I: 9</strong> <br />Caralho, tem coisa mais desconfortavel do que seus pais te perguntarem sobre sua vida particular? Meu pai me perguntou, no meio da rua, como eu estou com namoradas. Jogou na minha cara que tenho 26 anos e que ele nunca me via saindo com ninguém. Ainda me perguntou se isso tinha haver com uns problemas que eu estava tendo com testosterona e se por causa disso eu não tinha a iniciativa de caçar. Puta merda. Ele ainda me deixou deprimido, eu nem estava mais dando tanta bola pra esse meu problema. Como que família consegue ser tão escrota as vezes? Puta merda. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="29" data-bump="1488174114" data-time="1488154369">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542107.html"> <img src="/b/thumb/1488154129735.jpg" id="img-20542107" data-subject="55ANIMU ESPECIAL: GREAT TEACHER ONIZUKA(1999)" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:41"> </a>
+                    <div class="replies"> <strong>R: 29 / I: 24</strong>
+                        <p class="intro"><span class="subject">55ANIMU ESPECIAL: GREAT TEACHER ONIZUKA(1999)</span></p><span class="heading">SYNCHTUBE TEMPO</span><br/><br/><a href="https://href.li/?http://synchtu.be/r/55animu" rel="nofollow" target="_blank">http://synchtu.be/r/55animu</a><br/><br/><span class="heading">ANTES DE MAIS NADA, VALE LEMBRAR: HOJE, AS 22:00, FAREMOS A VOTAÇÃO QUE ESCOLHERÁ OS ANIMES DO PRÓXIMO FINAL DE SEMANA</span><br/><br/>Domingo de carnaval e você está ai em casa? Sorte sua. Ao invés de ficar se lamentando por não poder ir aos bailes pegar AIDS, gonorreia e hepatite como seu primo descolado, venha ver animu com os anões. Hoje teremos a 3ª parte de <strong>Great Teacher Onizuka</strong>.<br/><br/><strong>Sinopse:</strong> Onizuka Eikichi é um rapaz de 22 anos que no seu tempo de escola era líder de uma gangue de motociclistas da pesada e faixa preta em Karate. Depois de se formar numa faculdade de quinta categoria em Estudos Sociais, resolve exercer a profissão de professor, mesmo não tendo a mínima aptidão para o cargo. Com muito sacrifício, Onizuka consegue um emprego em um colégio e vai dar aula para uma turma fora do normal. Utilizando métodos pouco convencionais, ele procura colocar seus alunos na linha, tornando-se amigo, compreendendo-os e mostrando á eles que um professor também possui paus no meu cu (do modo mais difícil para eles). E claro, aproveitando pra ver as garotas de uniforme escolar e tentar conquistar Azusa Fuyutsuki, uma professora da mesma escola.<br/><br/><strong>Nº de Episódios:</strong> 43(hoje serão 8 do 27 ao 34)<br/><br/><strong>Horário:</strong> 22:10<br/><br/><strong>Regras:</strong> As mesmas regras do chan aplicam-se ao synch.<br/><br/><strong>Tutorial do Script:</strong> <a href="/an/res/28200.html#28202">&gt;&gt;&gt;/an/28202</a><br/><br/>Queixas, recomendações, dúvidas, sugestões e outras informações, entrem na thread geral do synch no /an/: <a href="/an/res/28200.html#28200">&gt;&gt;&gt;/an/28200</a><br/><br/><span class="heading">DIVIRTAM-SE</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="18" data-bump="1488173618" data-time="1488169714">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544569.html"> <img src="//img.youtube.com/vi/vkwZDRB3tZo/0.jpg" id="img-20544569" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:33"> </a>
+                    <div class="replies"> <strong>R: 18 / I: 1</strong> <br />Saiba tudo sobre George Washington. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="28" data-bump="1488173425" data-time="1488151494">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541452.html"> <img src="/b/thumb/1488151254513-0.jpg" id="img-20541452" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:30"> </a>
+                    <div class="replies"> <strong>R: 28 / I: 13</strong> <br />Frequento o recinto desde 2007 e uma pergunta nunca foi respondida. A boca influência no boquete? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="117" data-bump="1488173158" data-time="1488087584">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20534169.html"> <img src="/b/thumb/1488087343933.jpg" id="img-20534169" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:25"> </a>
+                    <div class="replies"> <strong>R: 117 / I: 130</strong> <br />Caralho, como eu estou desesperado pra comer uma BUCETA!<br/><span class="heading"> PUTA QUE PARIU! </span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="7" data-bump="1488172999" data-time="1488172730">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20545068.html"> <img src="/b/thumb/1488172490724.jpg" id="img-20545068" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:23"> </a>
+                    <div class="replies"> <strong>R: 7 / I: 2</strong> <br />Alguem ai possuem esse 2 cursos poderia compartilhar<br/><br/><a href="https://href.li/?http://www.puaseducao.com.br/" rel="nofollow" target="_blank">http://www.puaseducao.com.br/</a><br/><a href="https://href.li/?http://jogodotexto.com/?ref=E3192142A&amp;hsrc=UFVBfHBvcHVw" rel="nofollow" target="_blank">http://jogodotexto.com/?ref=E3192142A&amp;hsrc=UFVBfHBvcHVw</a><br/><br/>Valeu Obrigado. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="18" data-bump="1488172312" data-time="1488169366">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544504.html"> <img src="/b/thumb/1488169126108-0.jpg" id="img-20544504" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:11"> </a>
+                    <div class="replies"> <strong>R: 18 / I: 1</strong> <br /><span class="quote">&gt;processador de fodendos 300$</span><br/><span class="quote">&gt;sendo vendido a 1400 dorias pelo monopólio judaico da Kabum</span><br/><br/>Pelo menos estamos saindo do monopólio judaico de processadores. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="22" data-bump="1488172072" data-time="1488170607">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544721.html"> <img src="/b/thumb/1488170367970.jpg" id="img-20544721" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:07"> </a>
+                    <div class="replies"> <strong>R: 22 / I: 5</strong> <br />Se você se encontra neste recinto hoje, parabéns. Você é um verdadeiro anão, digno de se sentar entre os oldfags. Em pleno carnaval, somos a elite pensante da internet brasileira e aqui nos reunimos como se o chan fosse o nosso templo. Não nos deixamos levar por descoladisses e modismos. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="83" data-bump="1488171601" data-time="1488137615">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20539007.html"> <img src="//img.youtube.com/vi/DzfpyUB60YY/0.jpg" id="img-20539007" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 05:00"> </a>
+                    <div class="replies"> <strong>R: 83 / I: 39</strong> <br /><span class="quote">&gt;cidadezinha do interior dos EUA</span><br/><span class="quote">&gt;há algumas dezenas de anos, cidade hospedava grupos de ódio à teutões</span><br/><span class="quote">&gt;no presente, médico morador da cidadezinha descobre como transplantar o cérebro para outros corpos</span><br/><span class="quote">&gt;literalmente "imortalidade"</span><br/><span class="quote">&gt;médico convence cidade a financia-lo para trazer jovens para cidade e poder transplantar o cérebro dos velhos para novos e mais saudáveis corpos</span><br/><span class="quote">&gt;scq eles escolhem apenas teutões</span><br/><span class="quote">&gt;o filme conta a história de um desses teutões, que é iludido pela filha do médico a ir até a cidadezinha</span><br/><span class="quote"><br/>&gt;literalmente transforkosherm o "argumento" de "VOCÊ SÓ FALA MAL PORQUE TEM INVEJA" em filme</span><br/><span class="quote">&gt;mais uma obra que trata brancos como monstros e pretos como heróis mal tratados</span><br/><span class="quote">&gt;crítica amando</span><br/><br/><span class="heading">ESPERO QUE NÃO ESTEJA PENSANDO EM ASSISTIR ESTE CANCRO NO CINEMA, ANÃO DA INFINITARDE. </span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="8" data-bump="1488171562" data-time="1488171012">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544794.html"> <img src="/b/thumb/1488170771901-0.png" id="img-20544794" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:59"> </a>
+                    <div class="replies"> <strong>R: 8 / I: 3</strong> <br /><span class="quote">&gt;ata</span><br/><br/><span class="heading">ATA? ATA O SUA FILHA DE UMA PUTA? SABE O QUE EU FAÇO COM VAGABUNDA DO CARALHO QUE VEM FALAR 'ATA' PRA MIM? EU ENFIO UM GARFO NO OLHO DA VADIA E DEPOIS EU ESCALPELO A PIRANHA COM UMA ESPÁTULA ENFERRUJADA</span><br/><br/><span class="heading">ATA? FILHA NA PRÓXIMA VEZ QUE TU FALAR ESSA MERDA PRA MIM EU VOU METER UMA JOELHADA TÃO FORTE NA SUA BOCA QUE VOCÊ VAI SAIR CATANDO COQUINHO POR UNS 15 METROS ININTERRUPTOS ATÉ CAIR DE CARA NO ASFALTO, CARALHO</span><br/><br/><span class="heading">ATA É UMA TORA DE ORICALCO NO MEIO DO SEU RABO ATRAVESSANDO SUA BOCA, DESGRAÇADA, MANO, EU VOU QUEBRAR SEUS BRACINHOS SE VOCE FALAR ESSA MERDA PRA MIM DE NOVO.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="16" data-bump="1488170910" data-time="1488167567">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544205.html"> <img src="/b/thumb/1488167327305.jpeg" id="img-20544205" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:48"> </a>
+                    <div class="replies"> <strong>R: 16 / I: 8</strong> <br />Vocês mantém o mesmo comportamento fora dos chans ou agem de maneira diferente neste recinto apenas por conta da liberdade de expressão? Descrevam seus comportamentos dentro e fora dos chans.<br/><br/>Dentro:<br/><span class="quote">&gt;humor paixão</span><br/><span class="quote">&gt;racista</span><br/><span class="quote">&gt;extrema sonserina</span><br/><span class="quote">&gt;ignorante com opiniões diferentes</span><br/><span class="spoiler">&gt;fã do capitão planeta</span><br/><br/>Fora:<br/><span class="quote">&gt;sem humor</span><br/><span class="quote">&gt;me faço parecer liberal com etnias e raças</span><br/><span class="quote">&gt;isento com posições politicas</span><br/><span class="quote">&gt;simpático</span><br/><span class="quote">&gt;contra degenerações</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="10" data-bump="1488170594" data-time="1488168800">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544407.html"> <img src="/b/thumb/1488168560610.jpg" id="img-20544407" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:43"> </a>
+                    <div class="replies"> <strong>R: 10 / I: 1</strong> <br />Suponhamos que você, hipoteticamente, é claro, tenha uma escultura perdida de Donatello. O que você faria com ela? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="24" data-bump="1488170276" data-time="1488165762">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543897.html"> <img src="/b/thumb/1488165521978.jpg" id="img-20543897" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:37"> </a>
+                    <div class="replies"> <strong>R: 24 / I: 14</strong> <br />Como está o seu carnagato, anãozinho? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="10" data-bump="1488170216" data-time="1488169597">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544550.html"> <img src="/b/thumb/1488169357782.jpg" id="img-20544550" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:36"> </a>
+                    <div class="replies"> <strong>R: 10 / I: 0</strong> <br />Você nasceu pra ser livre ou já aceitou e se conformou em ser um escravo da sociedade? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="20" data-bump="1488170191" data-time="1488166867">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544085.html"> <img src="/b/thumb/1488166627732.png" id="img-20544085" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:36"> </a>
+                    <div class="replies"> <strong>R: 20 / I: 10</strong> <br />EXISTE COISA MELHOR QUE GUARANÁ TAÍ?<br/><br/><span class="spoiler">GUARANÁ ANTARCTICA É MERDA, INVENTADO POR JUDEUS PARA ENVENENAR O QUEJIM MINAS. TAÍ É O VERDADEIRO E AUTÊNTICO GUARANÁ BRASILEIRO.</span><br/><span class="spoiler">SIM, EU DONO DO TAÍ.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="4" data-bump="1488169965" data-time="1488169965">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544609.html"> <img src="/b/thumb/1488169725873.jpg" id="img-20544609" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:32"> </a>
+                    <div class="replies"> <strong>R: 4 / I: 0</strong> <br />Teste. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="6" data-bump="1488169612" data-time="1488166706">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544065.html"> <img src="//img.youtube.com/vi/8orldjx5Ubs/0.jpg" id="img-20544065" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:26"> </a>
+                    <div class="replies"> <strong>R: 6 / I: 0</strong> <br />Como fazer um currículo tendo apenas o ensino médio completo? Devo por objetivo para encher linguiça? Também queria a opinião de vocês se devo ou não botar que eu fui dispensado no quartel, já que a maioria dos lugares não chamam pessoas da minha idade por conta do exército. Me ajudem, por favor. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="9" data-bump="1488169564" data-time="1488168069">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544282.html"> <img src="/b/thumb/1488167829444.jpg" id="img-20544282" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:26"> </a>
+                    <div class="replies"> <strong>R: 9 / I: 0</strong> <br />Os mods são formados em língua portuguesa para julgar se o português de alguém está errado? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="20" data-bump="1488169010" data-time="1488152633">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541703.html"> <img src="/b/thumb/1488152393669.png" id="img-20541703" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:16"> </a>
+                    <div class="replies"> <strong>R: 20 / I: 2</strong> <br />Tem coisa mais idiota do que ficar assistindo quejimbol em grupo, soltando gritinhos histéricos aleatoriamente a cada chutinho que os pretos na televisão dão? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="5" data-bump="1488168825" data-time="1488168775">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20544405.html"> <img src="//img.youtube.com/vi/luX8a_3koVw/0.jpg" id="img-20544405" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:13"> </a>
+                    <div class="replies"> <strong>R: 5 / I: 1</strong> <br /><span class="quote">&gt;fit</span><br/><span class="quote">&gt;mora na estrangeira</span><br/><span class="quote">&gt;família endinheirada com condição de bancar ele no exterior</span><br/><span class="quote">&gt;namorando uma estrangeira belíssima há tempos</span><br/><span class="quote">&gt;branco</span><br/><span class="quote">&gt;vive o sonho</span><br/><br/><span class="spoiler">É só se esforçar que você consegue tudo, eles disseram.</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="12" data-bump="1488168281" data-time="1488154974">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542240.html"> <img src="/b/thumb/1488154734407.png" id="img-20542240" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:04"> </a>
+                    <div class="replies"> <strong>R: 12 / I: 2</strong> <br />Você sente prazer quando toca nos mamilos? Eu nunca tinha parado pra prestar atenção nisso, até que um dia eu estava caminhando em uma praça e ela estava ventando muito, a camisa que eu estava usando ficava sacudindo contra meus mamilos e proporcionava uma sensação muito boa. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="70" data-bump="1488168000" data-time="1488163024">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543427.html"> <img src="/b/thumb/1488162784301.jpg" id="img-20543427" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 04:00"> </a>
+                    <div class="replies"> <strong>R: 70 / I: 2</strong> <br />Sim, podemos se dizer que eu fui diagnosticado com sintomas de psicopata, eu estou aqui para passar a madrugada respondendo vocês. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="35" data-bump="1488167650" data-time="1488136181">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20538802.html"> <img src="//img.youtube.com/vi/mx8cDDB6OQM/0.jpg" id="img-20538802" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:54"> </a>
+                    <div class="replies"> <strong>R: 35 / I: 13</strong> <br />Chequem fora esta merda.<br/><span class="quote"><br/>&gt;médico maluco dissecando um cadáver na frente de uma platéia</span><br/><span class="quote">&gt;programa exibido na TV</span> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="124" data-bump="1488167556" data-time="1488145732">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20540379.html"> <img src="/b/thumb/1488145492132.png" id="img-20540379" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:52"> </a>
+                    <div class="replies"> <strong>R: 124 / I: 67</strong> <br /><span class="heading">Sem tempo para DSTs, postem mesatopos! </span><br/><br/>Passei o dia todo trabalhando no meu. O que acharam, anões? </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="71" data-bump="1488167430" data-time="1488140880">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20539502.html"> <img src="/b/thumb/1488140640228.png" id="img-20539502" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:50"> </a>
+                    <div class="replies"> <strong>R: 71 / I: 33</strong> <br /><span class="heading">Quão porco é o /b/?</span><br/><br/>130 pontos aqui. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="21" data-bump="1488167169" data-time="1488158833">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542811.html"> <img src="/b/thumb/1488158591972-0.jpg" id="img-20542811" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:46"> </a>
+                    <div class="replies"> <strong>R: 21 / I: 2</strong> <br />Joguem ratos neste cabo que estou fazendo para uma faca, deem dicas de como prosseguir.<br/><br/>É a primeira vez que faço algo do tipo, also utilizei apenas uma alckmin, lâmina e lixas. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="24" data-bump="1488166898" data-time="1488152551">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20541691.html"> <img src="/b/thumb/1488152311831.jpg" id="img-20541691" data-subject="Domingão Federal" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:41"> </a>
+                    <div class="replies"> <strong>R: 24 / I: 11</strong>
+                        <p class="intro"><span class="subject">Domingão Federal</span></p>DECLARO O DOMINGÃO FEDERAL ABERTO! </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="14" data-bump="1488166469" data-time="1488140434">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20539419.html"> <img src="/b/thumb/1488140194709.jpg" id="img-20539419" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:34"> </a>
+                    <div class="replies"> <strong>R: 14 / I: 0</strong> <br />Amo vocês, anões, já chegamos a 18k de apoios.<br/><span class="quote"><br/>&gt;Torna falsa acusação de estupro crime hediondo e inafiançável.</span><br/><br/><a href="https://href.li/?https://www12.senado.leg.br/ecidadania/visualizacaoideia?id=64353" rel="nofollow" target="_blank">https://www12.senado.leg.br/ecidadania/visualizacaoideia?id=64353</a> </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="2" data-bump="1488166416" data-time="1488165681">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543883.html"> <img src="/b/thumb/1488165441003.jpg" id="img-20543883" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:33"> </a>
+                    <div class="replies"> <strong>R: 2 / I: 0</strong> <br />Algum anão teria ainda o dropbox da merdalher que foi estuprada por 33 caras? <br/>Eu perdi o webm e queria repor na pasta. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="27" data-bump="1488166147" data-time="1488159407">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542915.html"> <img src="/b/thumb/1488159167143.jpg" id="img-20542915" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:29"> </a>
+                    <div class="replies"> <strong>R: 27 / I: 9</strong> <br />Que saudade do FORO DE SÃO PAULO, /b/. Que saudade da internet do começo da década de 2000. Tudo era muito amador e inocente. Um mundo cibernético inteiro ainda estava sendo desbravado. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="23" data-bump="1488165952" data-time="1488164777">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20543755.html"> <img src="/b/thumb/1488164536979.jpg" id="img-20543755" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:25"> </a>
+                    <div class="replies"> <strong>R: 23 / I: 7</strong> <br />Em que medida vocês estão banindo alguém por "grifinorismo"?<br/>Eu sou grifinorista moderado, não sou militante e sou individualista e ant-icoletivista, e costumo ser banido aqui diversas vezes quando expresso uma opinião minha, geralmente extremamente moderada.<br/><br/>Sou anão desde /1997/ e é uma desgraça ver que esse clima da panela do cancro está cada vez mais invadindo esse lugar. Se você xingar um "conservador" de cancro, um gibeiramito, ou um catolicorno já é o suficiente para ser banido. O chan nunca fez isso até a modinha pós eleições 2014.<br/> <br/>Tá nas regras que qualquer tipo de forçação política ou extremismo dá ban, mas não é isso que vemos na prática, vemos crianças paneleiras forçando gibeiramito o dia todo e muitos anões oldfags são banidos simplesmente por mandar eles pegarem a fornicação fora. </div>
+                </div>
+            </li>
+            <li class="mix" data-reply="17" data-bump="1488165796" data-time="1488156681">
+                <div class="thread grid-li grid-size-small">
+                    <a href="/b/res/20542475.html"> <img src="/b/thumb/1488156441403.jpg" id="img-20542475" data-subject="" data-name="Anônimo" data-muhdifference="" class="b thread-image" title="Feb 27 03:23"> </a>
+                    <div class="replies"> <strong>R: 17 / I: 8</strong> <br />Estou passando o carnaval em Fortaleza. Por que essa cidade praticamente não tem teutões? Só tem pardo e mediterrâneo? </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var styles = {
+            'Yotsuba B': '/stylesheets/',
+            'Yotsuba': '/stylesheets/yotsuba.css',
+            'Favela': '/stylesheets/favelav2.css',
+            'Steam': '/stylesheets/steam.css',
+            'Burichan': '/stylesheets/burichan.css',
+            'Dark': '/stylesheets/dark.css',
+            'Abyss': '/stylesheets/abyss.css',
+            'Gentoochan': '/stylesheets/gentoochan.css',
+            'Bunker': '/stylesheets/favelabunker.css',
+        };
+        onready(init);
+    </script>
+    <script type="text/javascript">
+        ready();
+    </script>
+    <hr/>
+    <footer>
+        <p class="unimportant copyright" style="margin-top:20px;text-align:center;"><a href="http://tinyboard.org/">Tinyboard</a> + <a href='https://int.vichan.net/devel/'>vichan</a> 4.9.93<br><a href="http://tinyboard.org/">Tinyboard</a> Copyright &copy; 2010-2014 Tinyboard Development Group <br><a href="https://engine.vichan.net/">vichan</a> Copyright &copy; 2012-2015 vichan-devel</p>
+    </footer>
+</body>
+
+</html>
