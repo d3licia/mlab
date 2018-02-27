@@ -12,6 +12,7 @@ gem 'selenium-webdriver'
 gem 'sentry-raven'
 gem 'standalone_migrations'
 gem 'toml-rb'
+gem 'thor'
 
 group :test do
   gem 'factory_girl'

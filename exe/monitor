@@ -4,27 +4,23 @@
 # The threads will only by check if the average of
 # message/time is less that last check time.
 
-require 'optparse'
+require 'thor'
 require_relative '../config/setup'
 require 'meta/monitor'
 
-options = {}
-OptionParser.new do |opts|
-  opts.banner = "Usage: monitor command [options]"
-
-  opts.on("-u", "--url", "Thread URL") do |v|
-    options[:verbose] = v
+class CLI < Thor
+  desc 'start', 'Start to looking for threads to archive'
+  def start
+    # driver = Meta.driver
+    # scalper = Meta::Scalper.new driver
+    Monitor(Meta.driver, Logger.new(STDOUT)).loop
   end
-end.parse!
 
-case ARGV.first
-when 'server'
-  driver = Meta.driver
-  scalper = Meta::Scalper.new driver
-  m = Monitor(Meta.driver, Logger.new(STDOUT))
-  m.loop
-when 'enqueue'
-  Resque.enqueue(Archive, opts[:url])
-else
-  puts 'Invalid command'
+  desc 'enqueue', 'Add a page to archive'
+  method_option :url, type: :string, aliases: '-u'
+  def enqueue
+    Resque.enqueue(Archive, opts[:url])
+  end
 end
+
+CLI.start

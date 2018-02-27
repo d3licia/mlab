@@ -212,6 +212,7 @@ DEPENDENCIES
   selenium-webdriver
   sentry-raven
   standalone_migrations
+  thor
   toml-rb
 
 BUNDLED WITH
